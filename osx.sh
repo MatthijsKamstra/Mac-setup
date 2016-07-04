@@ -19,7 +19,18 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+
+# http://osxdaily.com/2012/08/06/disable-notification-center-remove-menu-bar-icon-os-x/
+# How this disables Notification Center
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+killall NotificationCenter
+# How this re-enables Notification Center
+launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+open /System/Library/CoreServices/NotificationCenter.app/
+
+
 
 # # - name: Config | OSX | Hot corners - Misson Control
 # defaults write com.apple.dock wvous-tl-corner -int 2
@@ -131,7 +142,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Finder: show status bar
-#defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
@@ -147,7 +158,7 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Disable the warning when changing a file extension
-# defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -156,32 +167,54 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Remove the auto-hiding Dock delay
-defaults write com.apple.dock autohide-delay -float 0
-# Remove the animation when hiding/showing the Dock
-# defaults write com.apple.dock autohide-time-modifier -float 0
+# Set the icon size of Dock items to 36 pixels
+defaults write com.apple.dock tilesize -int 36
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+# defaults write com.apple.dock autohide -bool true 
+# defaults write com.apple.dock autohide-delay -float 0 
+# defaults write com.apple.dock autohide-time-modifier -float 0
+
+# iterm2
+#  
+# # Disable warning when quitting
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
 
-# Use `~/Documents/Torrents` to store incomplete downloads
+# Set up
+mkdir -p ~/Downloads/Torrents
+mkdir -p ~/Downloads/bt
+
+# Set up download folders
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Torrents"
+defaults write org.m0k.transmission DownloadLocationConstant -bool true
+defaults write org.m0k.transmission DownloadFolder -string "${HOME}/Downloads/bt"
 
 # Don’t prompt for confirmation before downloading
 defaults write org.m0k.transmission DownloadAsk -bool false
+
+# Don't ask before opening Magnet links
+defaults write org.m0k.transmission MagnetOpenAsk -bool false
 
 # Trash original torrent files
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 
 # Hide the donate message
 defaults write org.m0k.transmission WarningDonate -bool false
+
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
+
 
 
 echo "Done. Note that some of these changes require a logout/restart of your OS to take effect.  At a minimum, be sure to restart your Terminal."
