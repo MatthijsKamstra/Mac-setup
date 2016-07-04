@@ -22,6 +22,7 @@ I tried to minimize the manual steps as much as I could. These still remain...
 
 ## Sources:
 
+- https://github.com/rafeca/dotfiles/tree/master/osx/apps
 - https://github.com/donnemartin/dev-setup
 - https://github.com/DanielZwijnenburg/Mac-setup
 - http://www.codejuggle.dj/my-mac-os-x-development-setup/
