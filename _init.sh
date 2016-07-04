@@ -8,11 +8,11 @@
 
 sh clean.sh
 
-sh android.sh
+sh osxprep.sh
+sh osx.sh
 sh brew.sh
 sh design.sh
 sh haxe.sh
-sh osxprep.sh
-sh osx.sh
 sh web.sh
+sh android.sh
 
