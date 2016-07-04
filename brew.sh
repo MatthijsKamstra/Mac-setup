@@ -57,7 +57,7 @@ brew cask install github-desktop
 # android
 brew install android-sdk
 brew cask install android-studio
-brew install genymotion
+brew cask install genymotion
 
 #web-editors
 brew cask install atom
@@ -71,7 +71,7 @@ brew cask install java
 brew cask install xquartz
 
 # Development tool casks
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install atom
 brew cask install virtualbox
 brew cask install macdown
@@ -82,8 +82,6 @@ brew cask install firefox
 brew cask install skype
 brew cask install slack
 brew cask install dropbox
-brew cask install evernote
-brew cask install 1password
 brew cask install gimp
 brew cask install inkscape
 brew cask install airflow

@@ -30,7 +30,6 @@ brew install maven
 brew install gradle
 brew install android-sdk
 brew install android-ndk
-brew install genymotion
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -41,6 +40,7 @@ brew cask install intellij-idea-ce
 brew cask install android-studio
 # Install HAXM for blazing fast emulators.
 brew cask install intel-haxm
+brew cask install genymotion
 
 # Remove outdated versions from the cellar.
 brew cleanup
