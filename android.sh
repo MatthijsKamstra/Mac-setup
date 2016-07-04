@@ -24,13 +24,6 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Use Homebrew to install Android dev tools:
-brew install ant
-brew install maven
-brew install gradle
-brew install android-sdk
-brew install android-ndk
-
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
@@ -41,6 +34,15 @@ brew cask install android-studio
 # Install HAXM for blazing fast emulators.
 brew cask install intel-haxm
 brew cask install genymotion
+
+# make sure java is installed
+
+# Use Homebrew to install Android dev tools:
+brew install ant
+brew install maven
+brew install gradle
+brew install android-sdk
+brew install android-ndk
 
 # Remove outdated versions from the cellar.
 brew cleanup
