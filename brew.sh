@@ -38,10 +38,11 @@ brew install git-flow
 brew install git-extras
 brew install imagemagick --with-webp
 brew install youtube-dl
+brew install ffmpeg
 brew install node
 brew install haxe
 brew install imagemagick
-brew install transmission
+# brew install transmission # don't want the cli
 brew install sqlitebrowser
 brew install sip
 
@@ -121,6 +122,7 @@ brew cask install mamp
 brew cask install sdformatter
 brew cask install adobe-creative-cloud 
 brew cask install freemind
+brew cask install transmission
 
 
 # editors
