@@ -19,6 +19,12 @@ I tried to minimize the manual steps as much as I could. These still remain...
 
 
 
+# Sublime Text setup
+
+- Package controle: <https://packagecontrol.io/installation>
+- Haxe: <https://github.com/clemos/haxe-sublime-bundle/wiki/Installation#sublime-package-control>
+
+
 
 ## Sources:
 
