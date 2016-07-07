@@ -57,7 +57,7 @@ open /System/Library/CoreServices/NotificationCenter.app/
 # defaults write com.apple.dock wvous-br-modifier -int 0"
 
 # - name: Config | OSX | Keyboard - Disable press and hold
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # - name: Config | OSX | Keyboard - Blazingly fast key repeat
 defaults write NSGlobalDomain KeyRepeat -int 0
@@ -175,7 +175,7 @@ defaults write com.apple.dock autohide -bool true
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-time-modifier -float 1
 
 # defaults write com.apple.dock autohide -bool true 
 # defaults write com.apple.dock autohide-delay -float 0 

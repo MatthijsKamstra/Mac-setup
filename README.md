@@ -18,6 +18,14 @@ I tried to minimize the manual steps as much as I could. These still remain...
 
 
 
+# sublime
+
+
+# filezilla
+
+
+# mail
+
 
 
 ## Sources:

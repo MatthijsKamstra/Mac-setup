@@ -123,6 +123,7 @@ brew cask install sdformatter
 brew cask install adobe-creative-cloud 
 brew cask install freemind
 brew cask install transmission
+brew cask install dupeguru
 
 
 # editors
