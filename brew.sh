@@ -44,7 +44,6 @@ brew install haxe
 brew install imagemagick
 # brew install transmission # don't want the cli
 brew install sqlitebrowser
-brew install sip
 
 # Install Cask
 brew install caskroom/cask/brew-cask

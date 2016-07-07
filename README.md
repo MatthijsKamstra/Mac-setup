@@ -18,13 +18,38 @@ I tried to minimize the manual steps as much as I could. These still remain...
 
 
 
-# sublime
 
 
-# filezilla
+
+
+
+# Sublime Text setup
+
+- Package controle: <https://packagecontrol.io/installation>
+- `cmc+shift+p` + `install`
+    - Haxe: <https://github.com/clemos/haxe-sublime-bundle/wiki/Installation#sublime-package-control>
+	- Alignment
+	- AutoFileName
+	- Browser Refresh
+	- Color Highlighter
+	- ColorPicker
+	- DocBlockr
+	- GitGutter
+	- Haxe
+	- Indent XML
+	- Minifier
+	- Pretty JSON
+	- SideBarEnhancements
+	- SourceTree
+	- Trimmer
+
+
+
+# Filezilla
 
 
 # mail
+
 
 
 
