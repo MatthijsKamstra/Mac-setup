@@ -27,8 +27,8 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 killall NotificationCenter
 # How this re-enables Notification Center
-launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
-open /System/Library/CoreServices/NotificationCenter.app/
+# launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+# open /System/Library/CoreServices/NotificationCenter.app/
 
 
 
@@ -57,8 +57,9 @@ open /System/Library/CoreServices/NotificationCenter.app/
 # defaults write com.apple.dock wvous-br-modifier -int 0"
 
 # - name: Config | OSX | Keyboard - Disable press and hold
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 # defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# - name: Config | OSX | Keyboard - Enaable press and hold
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # - name: Config | OSX | Keyboard - Blazingly fast key repeat
 defaults write NSGlobalDomain KeyRepeat -int 0
