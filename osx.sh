@@ -186,6 +186,9 @@ defaults write com.apple.dock autohide-time-modifier -float 1
 # defaults write com.apple.dock autohide-delay -float 0 
 # defaults write com.apple.dock autohide-time-modifier -float 0
 
+# Always Show the User Library Folder
+chflags nohidden ~/Library/
+
 # iterm2
 #  
 # # Disable warning when quitting
