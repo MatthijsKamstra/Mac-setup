@@ -27,8 +27,11 @@ brew install sip
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
+$ brew tap caskroom/fonts                  # you only have to do this once!
+$ brew cask install font-inconsolata
+
 # go!
-brew cask install adobe-creative-cloud 
+brew cask install adobe-creative-cloud
 brew cask install gimp
 brew cask install inkscape
 brew cask install licecap
