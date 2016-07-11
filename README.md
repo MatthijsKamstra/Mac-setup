@@ -4,20 +4,20 @@ My Mac OS X development environment setup. Automated setup scripts for developer
 
 
 # Reminder
-I use this script to fully provision my development machine.
-There is a lot of dublicates in the scripts, I need to sort it out.
+I use this script to fully provision **my** development machine.
+There is a lot of duplicates in the scripts, I need to sort it out.
 
 
 # Prerequisites
 
-I tried to minimize the manual steps as much as I could. These still remain...
+I tried to minimise the manual steps as much as I could. These still remain...
 
 - XCode is installed (via the App Store)
 - Install Xcode from the Apple store and accept TOS
 - XCode command line tools are installed (xcode-select --install will prompt up a dialog)
 
 
-# Start 
+# Start
 
 Download or clone this repository.
 
@@ -49,32 +49,61 @@ or use a specific bash file
 	- SideBarEnhancements
 	- SourceTree
 	- Trimmer
+	- Terminal
 
+User preferences:
+
+```
+{
+	"word_wrap": true,
+	"font_face": "Inconsolata",
+	"font_size": 14,
+	"highlight_line": true,
+	"trim_trailing_white_space_on_save": true,
+	"auto_complete_commit_on_tab": true,
+	"draw_white_space": "all",
+	"highlight_modified_tabs": true,
+	"bold_folder_labels": false
+}
+
+```
+
+<http://www.thenerdary.net/post/29338253893/my-sublime-text-2-config>
+
+
+# Programming fonts
+
+<http://wesbos.com/programming-fonts/>
 
 
 # Filezilla
 
-soure: <http://biostall.com/how-to-copy-or-backup-your-filezilla-site-manager/>
+How to backup Filezilla
 
-Step 1
+**Step 1**
 Open up your copy of FileZilla, select the ‘Export…’ option from the ‘File’ menu and click the checkbox that reads ‘Export Site Manager entries’. At this point you may also want to select to export your settings and the current transfer queue if one exists.
 
-Step 2
+**Step 2**
 Click ‘OK’ and you’ll be asked where you want to save the exported file to. The export is in the format of an XML file and should be saved in a suitable location.
 
-Step 3
+**Step 3**
 Now we have our FileZilla site manager safe and sound it’s time to look at importing our sites back into FileZilla. To do this, with FileZilla open, select the ‘Import…’ option from the ‘File’ menu and navigate to where the saved XML file is sitting. Simply click ‘OK’ and watch as your settings flood back in. It’s almost as if you were never FileZilla-less.
 
+Resource: <http://biostall.com/how-to-copy-or-backup-your-filezilla-site-manager/>
 
 # mail
 
-resource:
+Ways to backup personal mail
+
+Resource:
 
 - <https://support.apple.com/kb/PH19174?locale=en_US>
 - <http://www.cnet.com/how-to/a-better-way-to-archive-email-in-apple-mail/>
 - <http://ccm.net/faq/11317-mac-os-back-up-your-mail-folder>
 
-## Sources:
+## Resources:
+
+Inspiration for the mac install:
 
 - [https://github.com/rafeca/dotfiles/tree/master/osx/apps]()
 - [https://github.com/donnemartin/dev-setup]()
