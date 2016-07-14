@@ -27,6 +27,11 @@ brew install haxe
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
+# fonts
+brew tap caskroom/fonts                  # you only have to do this once!
+brew cask install font-inconsolata
+# font is not necessary but I need it from my sublime setup
+
 # possible Haxe editors (you probably want to choose one and stick with that)
 # web-based-editors
 brew cask install atom
@@ -36,6 +41,8 @@ brew cask install visual-studio-code
 # IDE
 brew cask install intellij-idea-ce
 
+# I primarily use Sublime-text for Haxe development, so check out https://github.com/MatthijsKamstra/Mac-setup#sublime-text-setup for more settings/plugins/etc
+# Second favorite editor is Visual Studio Code, install https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -48,7 +55,7 @@ haxelib setup /usr/local/lib/haxe/lib/
 haxelib install lime
 haxelib install openfl
 
-# haxelib (s) I use 
+# haxelib (s) I use
 haxelib install actuate
 haxelib install box2d
 haxelib install csv
@@ -57,7 +64,6 @@ haxelib install express
 haxelib install feffects
 haxelib install format
 haxelib install haxelow
-# haxelib install HIDE
 haxelib install hxColorToolkit
 haxelib install hxcpp
 haxelib install hxjava
@@ -71,7 +77,6 @@ haxelib install lime-samples
 haxelib install lime
 haxelib install markdown
 haxelib install msignal
-# haxelib install node-webkit
 haxelib install npm
 haxelib install openfl-samples
 haxelib install openfl
@@ -80,7 +85,7 @@ haxelib install pixijs
 haxelib install react
 haxelib install refactor
 haxelib install svg
-# haxelib install svglib: [dev:/Users/matthijs/Documents/workingdir/haxe/svg/src]
+# haxelib install svglib: [dev:/path/to/svg/src]
 haxelib install swf
 haxelib install systools
 haxelib install tjson
