@@ -43,7 +43,6 @@ brew install node
 brew install haxe
 brew install imagemagick
 # brew install transmission # don't want the cli
-brew install sqlitebrowser
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -53,6 +52,7 @@ brew tap caskroom/versions
 # brew cask install virtualhostx
 brew cask install sourcetree
 brew cask install github-desktop
+brew cask install sqlitebrowser
 
 # Android
 brew install ant
@@ -103,7 +103,7 @@ brew cask install google-drive
 
 # design
 brew cask install licecap
-brew cask install adobe-creative-cloud 
+brew cask install adobe-creative-cloud
 brew cask install freemind
 brew cask install gimp
 brew cask install inkscape
@@ -116,7 +116,7 @@ brew cask install dupeguru
 brew cask install macdown
 brew cask install libreoffice
 
-# sound // video 
+# sound // video
 brew cask install handbrake
 brew cask install vlc
 brew cask install audacity
