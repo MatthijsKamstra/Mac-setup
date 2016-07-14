@@ -21,7 +21,7 @@ fi
 brew update
 
 # design
-brew install sip
+# brew install sip # not the sip I expected
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -40,5 +40,3 @@ brew cask install sketch
 # Remove outdated versions from the cellar.
 brew cleanup
 
-# Install all of the Android SDK components (you will be prompted to agree to license info and then this will take a while to run):
-android update sdk --no-ui
