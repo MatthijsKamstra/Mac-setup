@@ -26,7 +26,6 @@ brew install git
 brew install git-flow
 brew install git-extras
 brew install node
-brew install sqlitebrowser
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -36,6 +35,7 @@ brew tap caskroom/versions
 # brew cask install virtualhostx
 brew cask install sourcetree
 brew cask install github-desktop
+brew cask install sqlitebrowser
 
 # Web-editors
 brew cask install atom
