@@ -49,3 +49,40 @@ brew cleanup
 
 # Install all of the Android SDK components (you will be prompted to agree to license info and then this will take a while to run):
 android update sdk --no-ui
+
+
+
+# https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03
+
+echo "
+Update your environment variables:
+
+export ANT_HOME=/usr/local/opt/ant
+export MAVEN_HOME=/usr/local/opt/maven
+export GRADLE_HOME=/usr/local/opt/gradle
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+
+"
+
+echo "
+Update your paths (bonus points to a better solution to the hardcoded build tools version):
+
+export PATH=$ANT_HOME/bin:$PATH
+export PATH=$MAVEN_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/build-tools/19.1.0:$PATH
+
+"
+
+echo "
+
+Periodically run these commands again to ensure you're staying up to date:
+
+brew update
+android update sdk --no-ui
+
+"
+
