@@ -115,10 +115,10 @@ Resource:
 
 Inspiration for the-mac-setup:
 
-- [https://github.com/rafeca/dotfiles/tree/master/osx/apps]()
-- [https://github.com/donnemartin/dev-setup]()
-- [https://github.com/DanielZwijnenburg/Mac-setup]()
-- [http://www.codejuggle.dj/my-mac-os-x-development-setup/]()
-- [https://gist.github.com/g3d/2709563]()
-- [https://github.com/mathiasbynens/dotfiles/blob/master/.macos]()
-- [https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03]()
+- <https://github.com/rafeca/dotfiles/tree/master/osx/apps>
+- <https://github.com/donnemartin/dev-setup>
+- <https://github.com/DanielZwijnenburg/Mac-setup>
+- <http://www.codejuggle.dj/my-mac-os-x-development-setup/>
+- <https://gist.github.com/g3d/2709563>
+- <https://github.com/mathiasbynens/dotfiles/blob/master/.macos>
+- <https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03>
