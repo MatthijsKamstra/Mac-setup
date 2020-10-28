@@ -1,0 +1,157 @@
+AMPPS
+Adobe
+Adobe Acrobat DC
+Adobe Animate 2021
+Adobe Creative Cloud
+Adobe Flash Builder 4.7
+Adobe Illustrator 2021
+Adobe InDesign 2020
+Adobe InDesign 2021
+Adobe InDesign CC 2018
+Adobe InDesign CC 2019
+Adobe Media Encoder 2020
+Adobe Media Encoder CC 2019
+Adobe Photoshop 2020
+Adobe Photoshop CC 2018
+Adobe Photoshop CC 2019
+Adobe Premiere Pro 2020
+Adobe Premiere Pro CC 2017
+Adobe Premiere Pro CC 2019
+Aegisub.app
+Amphetamine.app
+Android File Transfer.app
+Android Studio.app
+AppCleaner.app
+Applications.txt
+Arduino.app
+Backup and Sync.app
+Battery Health 2.app
+Battery Health.app
+Battery Monitor.app
+Be Focused.app
+BetterZip.app
+Blender.app
+CCleaner.app
+CEWE FOTOIMPORT.app
+CEWE FOTOSHOW.app
+CEWE Fotoservice.app
+Caffeine.app
+Canon Utilities
+Caption.app
+ColorSlurp.app
+Commander One.app
+CopyClip.app
+Cricut Design Space.app
+CricutDesignSpace
+DB Browser for SQLite.app
+DiffMerge.app
+Discord.app
+Disk Inventory X.app
+DrCleaner.app
+Dragand.app
+Dropbox.app
+Duplicate File Finder & Remover.app
+EasyFind.app
+Etcher.app
+FileZilla.app
+Firefox.app
+Flow.app
+Flux.app
+Franz.app
+Free Ruler.app
+Freeplane.app
+Fritzing.app
+GIF Brewery 3.app
+GIMP-2.10.app
+GarageBand.app
+GitBook Editor.app
+GitHub Desktop.app
+Google Chrome.app
+Google Docs.app
+Google Drive File Stream.app
+Google Drive.app
+Google Sheets.app
+Google Slides.app
+HEMA fotoservice.app
+HandBrake.app
+IDLE 3.app
+ImageOptim.app
+Inkscape.app
+Intel Power Gadget
+IntelliJ IDEA CE.app
+Itsycal.app
+Jumpcut.app
+Kap.app
+KeePassXC.app
+Keynote.app
+LICEcap.app
+LMMS.app
+LibreOffice.app
+MAMP
+MAXON
+MacDown.app
+Macs Fan Control.app
+Microsoft Teams.app
+MongoBooster.app
+Name Mangler.app
+Noizio.app
+OBS.app
+ObinsKit.app
+OpenSCAD.app
+Pages.app
+Paw.app
+Pixen.app
+Playrr.app
+Pocket.app
+Pomotroid.app
+Popcorn-Time.app
+Postman.app
+Processing.app
+Python Launcher 3.app
+Ramme.app
+Robo 3T.app
+Robomongo.app
+SD Card Formatter.app
+Safari.app
+Scratch 2.app
+ScreenFlow.app
+Scribus.app
+Seashore.app
+Simplenote.app
+Sip.app
+SiteSucker.app
+Sketch.app
+Skitch.app
+Skype.app
+Slack.app
+SourceTree.app
+Spectacle.app
+Spotifree.app
+Spotify.app
+Sublime Text.app
+Suspicious Package.app
+SynfigStudio.app
+The Unarchiver.app
+TiddlyDesktop.app
+Time Out.app
+TomTom MyDrive Connect.app
+Tomato 2.app
+Tomato One.app
+Transmission.app
+TweetDeck.app
+Uninstall iShowU Audio Capture.app
+Unity
+Unity Hub.app
+Utilities
+VLC.app
+Vectr.app
+Visual Studio Code.app
+Wacom Tablet.localized
+Wondershare Filmora9.app
+XAMPP
+Xcode.app
+iMovie.app
+iTerm.app
+mkchromecast.app
+muCommander.app
+zoom.us.app

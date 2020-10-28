@@ -30,42 +30,6 @@ brew install git-flow
 brew install git-extras
 brew install node
 
-
-ampps
-betterzip
-db-browser-for-sqlite
-diffmerge
-firefox
-font-inconsolata
-github-desktop
-google-chrome
-google-drive
-imageoptim
-iterm2
-jumpcut
-mongobooster
-mucommander
-qlcolorcode
-qlimagesize
-qlmarkdown
-qlprettypatch
-qlstephen
-qlvideo
-quicklook-csv
-quicklook-json
-quicklookase
-sourcetree
-spectacle
-sqlitebrowser
-sublime-text
-suspicious-package
-the-unarchiver
-tiddlywiki
-visual-studio-code
-webpquicklook
-
-
-
 # Install Cask
 # brew install caskroom/cask/brew-cask
 # brew tap caskroom/versions
@@ -76,7 +40,7 @@ brew cask install sourcetree
 brew cask install github-desktop
 brew cask install sqlitebrowser
 
-# editors
+# Web-editors
 # brew cask install atom
 # brew cask install brackets
 brew cask install sublime-text
@@ -101,11 +65,12 @@ brew cask install macdown
 # brew cask install postman
 # brew cask install charles
 brew cask install diffmerge
-# brew cask install filezilla // removed
-# brew cask install mamp
+brew cask install filezilla
+brew cask install mamp
 
 # Core casks
 brew cask install iterm2
+brew cask install sublime-text
 brew cask install sourcetree
 # brew cask install gitx
 
@@ -115,8 +80,8 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 # Remove outdated versions from the cellar.
 brew cleanup
 
-# npm install -g coffee-script
-# npm install -g gulp
-# npm install -g grunt-cli
-# npm install -g jshint
-# npm install -g less
+npm install -g coffee-script
+npm install -g gulp
+npm install -g grunt-cli
+npm install -g jshint
+npm install -g less

@@ -2,11 +2,10 @@
 
 My Mac OS X development environment setup. Automated setup scripts for developer tools like Sublime Text, iTerm, web development, Android development, and dev-based OS X defaults.
 
-
 # Reminder
+
 I use this script to fully provision **my** development machine.
 There is a lot of duplicates in the scripts, I need to sort it out.
-
 
 # Prerequisites
 
@@ -16,6 +15,12 @@ I tried to minimise the manual steps as much as I could. These still remain...
 - Install Xcode from the Apple store and accept TOS
 - XCode command line tools are installed (xcode-select --install will prompt up a dialog)
 
+# Get preinstalled brew / cask
+
+```
+brew cask list > brew_cask_list.txt
+brew list > brew_list.txt
+```
 
 # Start
 
@@ -37,30 +42,27 @@ or use a specific bash file
 - Change default OSX settings: [OSX setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/osx.sh)
 - Web dev setup (git/node/editors/plugins/programs/etc): [Web development setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/web.sh)
 
-
 # Sublime Text setup
 
 - Install Package control: <https://packagecontrol.io/installation>
 - And then install via `cmc+shift+p` + `install` the following:
-	- Alignment
-	- AutoFileName
-	- Browser Refresh
-	- Color Highlighter
-	- ColorPicker
-	- DocBlockr
-	- GitGutter
-	- Haxe
-	- Indent XML
-	- Minifier
-	- Pretty JSON
-	- SideBarEnhancements
-	- SourceTree
-	- Trimmer
-	- Terminal
+  - Alignment
+  - AutoFileName
+  - Browser Refresh
+  - Color Highlighter
+  - ColorPicker
+  - DocBlockr
+  - GitGutter
+  - Haxe
+  - Indent XML
+  - Minifier
+  - Pretty JSON
+  - SideBarEnhancements
+  - SourceTree
+  - Trimmer
+  - Terminal
 
 User preferences:
-
-
 
 ```
 {
@@ -79,12 +81,10 @@ User preferences:
 
 [resource](http://www.thenerdary.net/post/29338253893/my-sublime-text-2-config)
 
-
 # Programming fonts
 
 Currently I use `Inconsolata`, but that might change.
 So to be prepared for that: <http://wesbos.com/programming-fonts/>
-
 
 # Filezilla
 

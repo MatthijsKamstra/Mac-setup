@@ -55,42 +55,43 @@ brew cask install github-desktop
 brew cask install sqlitebrowser
 
 # Android
-brew install ant
-brew install maven
-brew install gradle
-brew install android-sdk
-brew cask install android-studio
-brew cask install genymotion
-brew cask install java
+# brew install ant
+# brew install maven
+# brew install gradle
+# brew install android-sdk
+# brew cask install android-studio
+# brew cask install genymotion
+# brew cask install java
 
 # web-editors
-brew cask install atom
-brew cask install brackets
+# brew cask install atom
+# brew cask install brackets
 brew cask install sublime-text
 brew cask install visual-studio-code
 
 # Core casks
-brew cask install xquartz
+# brew cask install xquartz
 
 # Development tool casks
 brew cask install iterm2
 brew cask install sublime-text
-brew cask install atom
-brew cask install virtualbox
+# brew cask install atom
+# brew cask install virtualbox
 brew cask install macdown
 
 # webdevelop
 brew cask install google-chrome
 brew cask install firefox
-brew cask install charles
-brew cask install gitx
+# brew cask install charles
+# brew cask install gitx
 brew cask install imageoptim
-brew cask install paw
-brew cask install postman
-brew cask install charles
-brew cask install filezilla
-brew cask install mamp
-brew cask install dash
+# # brew cask install paw
+# # brew cask install postman
+# brew cask install charles
+# brew cask install filezilla
+# brew cask install mamp
+# brew cask install dash
+brew cask install ampps
 
 # communication
 brew cask install skype
@@ -104,39 +105,42 @@ brew cask install google-drive
 # design
 brew cask install licecap
 brew cask install adobe-creative-cloud
-brew cask install freemind
+# brew cask install freemind
+brew cask install freeplane
 brew cask install gimp
 brew cask install inkscape
 
 # compare files / folders /images
 brew cask install diffmerge
-brew cask install dupeguru
+# brew cask install dupeguru
 
 # text-editors
 brew cask install macdown
 brew cask install libreoffice
 
 # sound // video
-brew cask install handbrake
+# brew cask install handbrake
 brew cask install vlc
-brew cask install audacity
+# brew cask install audacity ## doesn't exist anymore
 brew cask install spotify
-brew cask install screenflow
+brew cask install spotifree
+brew cask install kap
+brew cask install licecap
 
 # misc
-brew cask install airflow
+# brew cask install airflow
 brew cask install spectacle
-brew cask install antirsi
+# brew cask install antirsi
 brew cask install appcleaner
-brew cask install keepassx
-brew cask install caffeine
+brew cask install keepassxc
+# brew cask install caffeine
 brew cask install ccleaner
 brew cask install flux
-brew cask install name-mangler
+# brew cask install name-mangler
 brew cask install the-unarchiver
 brew cask install tiddlywiki
-brew cask install intellij-idea-ce
-brew cask install sdformatter
+# brew cask install intellij-idea-ce
+# brew cask install sdformatter
 brew cask install transmission
 
 
