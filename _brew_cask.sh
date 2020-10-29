@@ -79,7 +79,8 @@ brew cask install sqlitebrowser
 brew cask install sublime-text
 brew cask install suspicious-package
 brew cask install the-unarchiver
-brew cask install tiddlywiki
+# brew cask install tiddlywiki
+brew cask install tiddly
 brew cask install transmission
 brew cask install visual-studio-code
 brew cask install vlc

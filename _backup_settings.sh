@@ -30,7 +30,6 @@ ls /Applications > export_don_t_upload/applications_list.txt
 # possible to get all apps installed on computer
 # sudo find / -iname *.app > export_don_t_upload/applications_all_list.txt
 
-
 # Haxe
 echo '├── Haxe'
 haxelib list > export_don_t_upload/haxelib_list.txt

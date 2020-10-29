@@ -69,9 +69,9 @@ brew cask install gimp
 brew cask install inkscape
 brew cask install sketch
 brew cask install sketchup
-brew cask install Seashore
-brew cask install Scribus
-brew cask install SynfigStudio
+brew cask install seashore
+brew cask install scribus
+brew cask install synfigstudio
 brew cask install blender
 
 # finder +
