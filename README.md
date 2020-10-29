@@ -1,6 +1,6 @@
 # Mac-setup
 
-My Mac OS X development environment setup. Automated setup scripts for developer tools like Sublime Text, iTerm, web development, Android development, and dev-based OS X defaults.
+My Mac OS X development environment setup. Automated setup scripts for developer tools like Sublime Text, iTerm, web development, ~~Android development~~, and dev-based OS X defaults.
 
 # Reminder
 
@@ -14,13 +14,6 @@ I tried to minimise the manual steps as much as I could. These still remain...
 - XCode is installed (via the App Store)
 - Install Xcode from the Apple store and accept TOS
 - XCode command line tools are installed (xcode-select --install will prompt up a dialog)
-
-# Get preinstalled brew / cask
-
-```
-brew cask list > brew_cask_list.txt
-brew list > brew_list.txt
-```
 
 # Start
 
@@ -114,6 +107,8 @@ Resource:
 ## Resources:
 
 Inspiration for the-mac-setup:
+
+- <https://github.com/arbitrarily/Fresh-Install>
 
 - <https://github.com/rafeca/dotfiles/tree/master/osx/apps>
 - <https://github.com/donnemartin/dev-setup>

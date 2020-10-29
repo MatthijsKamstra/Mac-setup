@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
+echo "Setup brew cask ..."
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -19,8 +19,10 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
+
+# install based upon my previous installation
 # quick and dirty install casks
 brew cask install adobe-creative-cloud
 brew cask install ampps
@@ -34,14 +36,14 @@ brew cask install dropbox
 brew cask install etcher
 brew cask install firefox
 brew cask install flux
-brew cask install font-inconsolata
+# brew cask install font-inconsolata # doesn't work anymo0re
 brew cask install franz
 brew cask install freeplane
 brew cask install fritzing
 brew cask install gimp
-brew cask install github-desktop
+# brew cask install github-desktop # not?
 brew cask install google-chrome
-brew cask install google-drive
+# brew cask install google-drive # not?
 brew cask install imageoptim
 brew cask install inkscape
 brew cask install iterm2

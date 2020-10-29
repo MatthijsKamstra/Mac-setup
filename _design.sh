@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Setup Design ..."
+
 # Install command-line tools using Homebrew.
 
 # Ask for the administrator password upfront.
@@ -18,32 +20,19 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Upgrade any already-installed formulae.
-brew upgrade --all
-
-# quick and dirty install casks
-brew install emscripten
-brew install ffmpeg
-brew install git
-brew install git-extras
-brew install git-flow
-brew install gitlab-runner
-brew install heroku
-brew install heroku-node
-brew install imagemagick
-brew install libsass
-brew install lua
-brew install luarocks
-brew install mariadb
-brew install mongodb-community
-brew install node
-brew install pandoc
-brew install python
-brew install python3
-brew install python@3.8
-brew install sqlite
-brew install youtube-dl
-
+# design
+brew cask install adobe-creative-cloud
+brew cask install gimp
+brew cask install inkscape
+brew cask install sketch
+brew cask install sketchup
+brew cask install seashore
+brew cask install scribus
+brew cask install scribus-dev
+brew cask install synfigstudio
+brew cask install blender
+# brew cask install krita
 
 # Remove outdated versions from the cellar.
 brew cleanup
+

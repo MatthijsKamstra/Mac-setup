@@ -21,7 +21,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install other useful binaries.
 brew install git
@@ -31,38 +31,34 @@ brew install git-extras
 brew install node
 
 
-ampps
-betterzip
-db-browser-for-sqlite
-diffmerge
-firefox
-font-inconsolata
-github-desktop
-google-chrome
-google-drive
-imageoptim
-iterm2
-jumpcut
-mongobooster
-mucommander
-qlcolorcode
-qlimagesize
-qlmarkdown
-qlprettypatch
-qlstephen
-qlvideo
-quicklook-csv
-quicklook-json
-quicklookase
-sourcetree
-spectacle
-sqlitebrowser
-sublime-text
-suspicious-package
-the-unarchiver
-tiddlywiki
-visual-studio-code
-webpquicklook
+brew install gitlab-runner
+
+
+
+brew cask install ampps
+brew cask install betterzip
+brew cask install db-browser-for-sqlite
+brew cask install diffmerge
+brew cask install firefox
+brew cask install font-inconsolata
+brew cask install github-desktop
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install imageoptim
+brew cask install iterm2
+brew cask install jumpcut
+brew cask install mongobooster
+brew cask install mucommander
+
+brew cask install sourcetree
+brew cask install spectacle
+brew cask install sqlitebrowser
+brew cask install sublime-text
+brew cask install suspicious-package
+brew cask install the-unarchiver
+# brew cask install tiddlywiki
+brew cask install visual-studio-code
+
 
 
 
@@ -73,8 +69,10 @@ webpquicklook
 # develop
 # brew cask install virtualhostx
 brew cask install sourcetree
-brew cask install github-desktop
 brew cask install sqlitebrowser
+
+
+
 
 # editors
 # brew cask install atom
@@ -88,19 +86,18 @@ brew cask install mucommander
 
 # Misc casks
 brew cask install firefox
-# brew cask install charles
-# brew cask install gitx
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install imageoptim
-# brew cask install name-mangler
-# brew cask install dash
 brew cask install the-unarchiver
 brew cask install macdown
+brew cask install diffmerge
+# brew cask install charles
+# brew cask install gitx
+# brew cask install name-mangler
+# brew cask install dash
 # brew cask install paw
 # brew cask install postman
-# brew cask install charles
-brew cask install diffmerge
 # brew cask install filezilla // removed
 # brew cask install mamp
 
