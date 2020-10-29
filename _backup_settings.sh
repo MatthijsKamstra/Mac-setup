@@ -34,7 +34,43 @@ ls /Applications > export_don_t_upload/applications_list.txt
 echo '├── Haxe'
 haxelib list > export_don_t_upload/haxelib_list.txt
 
+# Sourcetree
+echo '├── Sourcetree'
+# create folder for sourcetree settings file
+mkdir -p export_don_t_upload/SourceTree
+# open ~/Library/Application\ Support/SourceTree/
+# copy content
+cp -r ~/Library/Application\ Support/SourceTree/ export_don_t_upload/SourceTree
+# create instructions
+touch export_don_t_upload/SourceTree/__delete__this__file.txt
+echo "~/Library/Application Support/SourceTree/" > export_don_t_upload/SourceTree/__delete__this__file.txt
+# zip it because we can
+zip -r export_don_t_upload/SourceTree.zip export_don_t_upload/SourceTree
 
+# Adobe
+echo '├── Adobe'
+mkdir -p export_don_t_upload/adobe
+# open ~/.adobe/
+# copy content
+cp -r ~/.adobe/ export_don_t_upload/adobe
+# create instructions
+touch export_don_t_upload/adobe/__delete__this__file.txt
+echo "~/.adobe/" > export_don_t_upload/adobe/__delete__this__file.txt
+# zip it because we can
+zip -r export_don_t_upload/adobe.zip export_don_t_upload/adobe
+
+
+# FileZilla
+echo '├── FileZilla'
+mkdir -p export_don_t_upload/filezilla
+# open ~/.filezilla/
+# copy content
+cp -r ~/.config/filezilla/ export_don_t_upload/filezilla
+# create instructions
+touch export_don_t_upload/filezilla/__delete__this__file.txt
+echo "~/.config/filezilla/" > export_don_t_upload/filezilla/__delete__this__file.txt
+# zip it because we can
+zip -r export_don_t_upload/filezilla.zip export_don_t_upload/filezilla
 
 
 

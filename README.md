@@ -21,7 +21,7 @@ Download or clone this repository.
 
 ```
 cd /to/the/correct/folder
-sh _init.sh
+sh install.sh
 ```
 
 or use a specific bash file
@@ -33,7 +33,7 @@ or use a specific bash file
 - Quick start for [Haxe](http://haxe.org): [Haxe setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/haxe.sh)
 - Update OSX: [OSX prep setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/osxprep.sh)
 - Change default OSX settings: [OSX setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/osx.sh)
-- Web dev setup (git/node/editors/plugins/programs/etc): [Web development setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/web.sh)
+- Web dev setup (git/node/editors/plugins/programs/etc): [Web development setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/_web.sh)
 
 # Sublime Text setup
 
