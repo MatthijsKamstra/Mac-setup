@@ -23,21 +23,6 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-# Install Haxe
-# brew install haxe # not sure I want to do this
-
-# Haxe editors (you probably want to choose one and stick with that)
-brew cask install visual-studio-code
-brew cask install sublime-text
-# brew cask install atom
-# brew cask install brackets
-
-# IDE
-# brew cask install intellij-idea-ce
-
-# Favorite editor is Visual Studio Code, install https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe
-# I primarily use Sublime-text for Haxe development, so check out https://github.com/MatthijsKamstra/Mac-setup#sublime-text-setup for more settings/plugins/etc
-
 # Remove outdated versions from the cellar.
 brew cleanup
 
@@ -45,27 +30,41 @@ brew cleanup
 # Set the haxelib path
 haxelib setup /usr/local/lib/haxe/lib/
 
-
-# haxelib (s) I use
+# installed
+haxelib install buddy
 haxelib install csv
+haxelib install dat.GUI
+haxelib install dox
 haxelib install electron
+haxelib install embed-js
 haxelib install express
 haxelib install format
 haxelib install haxelow
+haxelib install hx3compat
 haxelib install hxColorToolkit
 haxelib install hxcpp
+haxelib install hxquicksettings
+haxelib install hxgenjs
 haxelib install hxjava
 haxelib install hxnodejs
-haxelib install hxssl
-haxelib install jQueryExtern
-haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
+haxelib install hxquicksettings
+haxelib install js-kit
 haxelib install markdown
+haxelib install Minifier
+haxelib install mloader
 haxelib install msignal
 haxelib install npm
-haxelib install refactor
-# haxelib install svglib: [dev:/path/to/svg/src]
+haxelib install thx.color
+haxelib install thx.core
+haxelib install thx.csv
+haxelib install thx.promise
+haxelib install tink_await
+haxelib install tink_core
+haxelib install tink_macro
+haxelib install tink_priority
+haxelib install tink_stringly
+haxelib install tink_syntaxhub
+haxelib install tink_url
 haxelib install tjson
-
-
-
+haxelib install uglifyjs
 

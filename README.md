@@ -17,6 +17,8 @@ I tried to minimise the manual steps as much as I could. These still remain...
 
 # Create backup
 
+Before we can install a fresh computer, we want to backup the old settings
+
 - dotfiles
 - ssh
 - vscode
@@ -32,19 +34,35 @@ I tried to minimise the manual steps as much as I could. These still remain...
 - Fonts
 
 ```
-cd /to/the/correct/folder
+git clone https://github.com/MatthijsKamstra/Mac-setup.git
+cd Mac-setup
 sh _backup_settings.sh
 ```
+
+# okay, empty computer has no git
+
+- open https://raw.githubusercontent.com/MatthijsKamstra/Mac-setup/master/_clean.sh
+- save on your computer (cmd + s)
+- open that folder `cd path/to/saved/folder`
+- run script `sh _clean.sh`
+
+it will install:
+
+- xcode
+- brew
+- git
 
 # Start
 
 Download or clone this repository.
 
 ```
-cd /to/the/correct/folder
+git clone https://github.com/MatthijsKamstra/Mac-setup.git
+cd Mac-setup
 sh install.sh
 ```
 
+<!--
 or use a specific bash file
 
 - For Android development: [Android setup](https://github.com/MatthijsKamstra/Mac-setup/blob/master/android.sh)
@@ -95,11 +113,23 @@ User preferences:
 
 [resource](http://www.thenerdary.net/post/29338253893/my-sublime-text-2-config)
 
+-->
+
 # Programming fonts
 
-Currently I use `Inconsolata`, but that might change.
-So to be prepared for that: <http://wesbos.com/programming-fonts/>
+For my editor I use `JetBrains Mono`. (https://www.jetbrains.com/lp/mono/)
 
+My previous font was `Inconsolata`. (https://fonts.google.com/specimen/Inconsolata)
+
+Source if you want to choose your own:
+
+- https://www.slant.co/topics/67/~best-programming-fonts
+- https://www.elegantthemes.com/blog/wordpress/best-programming-fonts
+- https://developer-tech.com/news/2018/may/16/10-best-fonts-programming/
+- https://itnext.io/11-best-programming-fonts-724283a9ed57
+- <http://wesbos.com/programming-fonts/>
+
+<!--
 # Filezilla
 
 How to backup Filezilla
@@ -125,12 +155,15 @@ Resource:
 - <http://www.cnet.com/how-to/a-better-way-to-archive-email-in-apple-mail/>
 - <http://ccm.net/faq/11317-mac-os-back-up-your-mail-folder>
 
+-->
+
 ## Resources:
 
 Inspiration for the-mac-setup:
 
 - <https://github.com/arbitrarily/Fresh-Install>
-
+- <https://github.com/alichtman/shallow-backup/blob/d28e4e51542f375af527c026b0af77314fbfe01e/shallow_backup/config.py>
+- <https://sourabhbajaj.com/mac-setup/Git/README.html>
 - <https://github.com/rafeca/dotfiles/tree/master/osx/apps>
 - <https://github.com/donnemartin/dev-setup>
 - <https://github.com/DanielZwijnenburg/Mac-setup>

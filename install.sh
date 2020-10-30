@@ -17,20 +17,27 @@
 # sh android.sh ## not doing android anymore
 
 
-
+# start from zero
 sh _clean.sh
 sh _osxprep.sh
 
+# install programmers fonts
+sh _font.sh
+
+# install all via brew
 sh _brew_cask.sh
 sh _brew_list.sh
 sh _brew.sh
 
+# install global npm
 sh _npm.sh
 
+# creative
 sh _creativecoding.sh
 sh _design.sh
 
-sh _haxe.sh
+# misc
+# sh _haxe.sh # not for now
 sh _socials.sh
 sh _web.sh
 sh _misc.sh
