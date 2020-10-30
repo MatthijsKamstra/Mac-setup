@@ -15,6 +15,27 @@ I tried to minimise the manual steps as much as I could. These still remain...
 - Install Xcode from the Apple store and accept TOS
 - XCode command line tools are installed (xcode-select --install will prompt up a dialog)
 
+# Create backup
+
+- dotfiles
+- ssh
+- vscode
+- sourcetree
+- filezilla
+- sublimetext
+- brew
+- brew cask
+- npm
+- application folder
+- haxe
+- Adobe?
+- Fonts
+
+```
+cd /to/the/correct/folder
+sh _backup_settings.sh
+```
+
 # Start
 
 Download or clone this repository.

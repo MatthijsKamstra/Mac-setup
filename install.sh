@@ -38,7 +38,7 @@ sh _misc.sh
 sh _pomodore.sh
 sh _screencapture.sh
 
-
+# run `sh _backup_settings.sh` if you want to backup some
 # sh _backup_settings.sh
 # sh _list_program.sh
 
