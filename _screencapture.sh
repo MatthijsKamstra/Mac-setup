@@ -33,7 +33,7 @@ brew cask install obs
 
 # convert screen captures to different movie/gif
 brew cask install imageoptim
-brew cask install gifsicle
+brew install gifsicle
 
 # Remove outdated versions from the cellar.
 brew cleanup

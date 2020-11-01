@@ -54,7 +54,7 @@ brew cask install google-drive
 
 # record
 brew cask install licecap
-brew cask install gifsicle
+brew install gifsicle
 brew cask install kap
 
 # optimalisation
