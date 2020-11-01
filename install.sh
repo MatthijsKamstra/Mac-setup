@@ -21,6 +21,9 @@
 sh _clean.sh
 sh _osxprep.sh
 
+# beat osx into shape
+sh _macos.sh
+
 # install programmers fonts
 sh _font.sh
 
