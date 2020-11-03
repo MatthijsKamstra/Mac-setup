@@ -14,7 +14,6 @@ echo 'Setting up osx'
 osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
-
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
