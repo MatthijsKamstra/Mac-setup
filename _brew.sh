@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Setup brew ..."
+
+
 # Install command-line tools using Homebrew.
 
 # Ask for the administrator password upfront.

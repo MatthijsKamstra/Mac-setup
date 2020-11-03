@@ -7,6 +7,8 @@
 # 		https://raw.githubusercontent.com/donnemartin/dev-setup/master/osx.sh
 
 
+echo 'Setting up osx'
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -31,7 +33,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
+
+# doesn't work on Catalina
+
+# defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Set highlight color to green
 # defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
@@ -141,7 +146,8 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 # Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -151,10 +157,13 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-# Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
+# doesn't work on Catalina
+
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+# defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# # Follow the keyboard focus while zoomed in
+# defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
 # defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -186,42 +195,44 @@ sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
 # Energy saving                                                               #
 ###############################################################################
 
-# Enable lid wakeup
-sudo pmset -a lidwake 1
+# cataline objects
 
-# Restart automatically on power loss
-sudo pmset -a autorestart 1
+# # Enable lid wakeup
+# sudo pmset -a lidwake 1
 
-# Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# # Restart automatically on power loss
+# sudo pmset -a autorestart 1
 
-# Sleep the display after 15 minutes
-sudo pmset -a displaysleep 15
+# # Restart automatically if the computer freezes
+# sudo systemsetup -setrestartfreeze on
 
-# Disable machine sleep while charging
-sudo pmset -c sleep 0
+# # Sleep the display after 15 minutes
+# sudo pmset -a displaysleep 15
 
-# Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 5
+# # Disable machine sleep while charging
+# sudo pmset -c sleep 0
 
-# Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# # Set machine sleep to 5 minutes on battery
+# sudo pmset -b sleep 5
 
-# Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# # Set standby delay to 24 hours (default is 1 hour)
+# sudo pmset -a standbydelay 86400
 
-# Hibernation mode
-# 0: Disable hibernation (speeds up entering sleep mode)
-# 3: Copy RAM to disk so the system state can still be restored in case of a
-#    power failure.
-sudo pmset -a hibernatemode 0
+# # Never go into computer sleep mode
+# sudo systemsetup -setcomputersleep Off > /dev/null
 
-# Remove the sleep image file to save disk space
-sudo rm /private/var/vm/sleepimage
-# Create a zero-byte file instead…
-sudo touch /private/var/vm/sleepimage
-# …and make sure it can’t be rewritten
-sudo chflags uchg /private/var/vm/sleepimage
+# # Hibernation mode
+# # 0: Disable hibernation (speeds up entering sleep mode)
+# # 3: Copy RAM to disk so the system state can still be restored in case of a
+# #    power failure.
+# sudo pmset -a hibernatemode 0
+
+# # Remove the sleep image file to save disk space
+# sudo rm /private/var/vm/sleepimage
+# # Create a zero-byte file instead…
+# sudo touch /private/var/vm/sleepimage
+# # …and make sure it can’t be rewritten
+# sudo chflags uchg /private/var/vm/sleepimage
 
 ###############################################################################
 # Screen                                                                      #
@@ -346,7 +357,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+# chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
 
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
@@ -587,7 +598,12 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+
+# catalina says no
+
+# sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+
+
 # Change indexing order and disable some search results
 # Yosemite-specific search results (remove them if you are using macOS 10.9 or older):
 # 	MENU_DEFINITION
@@ -596,35 +612,35 @@ sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Vol
 # 	MENU_SPOTLIGHT_SUGGESTIONS (send search queries to Apple)
 # 	MENU_WEBSEARCH             (send search queries to Apple)
 # 	MENU_OTHER
-defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 1;"name" = "PDF";}' \
-	'{"enabled" = 1;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 0;"name" = "MESSAGES";}' \
-	'{"enabled" = 0;"name" = "CONTACT";}' \
-	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "MUSIC";}' \
-	'{"enabled" = 0;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}' \
-	'{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
-	'{"enabled" = 0;"name" = "MENU_OTHER";}' \
-	'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
-	'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
-	'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
-	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
-# Load new settings before rebuilding the index
-killall mds > /dev/null 2>&1
-# Make sure indexing is enabled for the main volume
-sudo mdutil -i on / > /dev/null
-# Rebuild the index from scratch
-sudo mdutil -E / > /dev/null
+# defaults write com.apple.spotlight orderedItems -array \
+# 	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+# 	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+# 	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
+# 	'{"enabled" = 1;"name" = "PDF";}' \
+# 	'{"enabled" = 1;"name" = "FONTS";}' \
+# 	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
+# 	'{"enabled" = 0;"name" = "MESSAGES";}' \
+# 	'{"enabled" = 0;"name" = "CONTACT";}' \
+# 	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
+# 	'{"enabled" = 0;"name" = "IMAGES";}' \
+# 	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
+# 	'{"enabled" = 0;"name" = "MUSIC";}' \
+# 	'{"enabled" = 0;"name" = "MOVIES";}' \
+# 	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+# 	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+# 	'{"enabled" = 0;"name" = "SOURCE";}' \
+# 	'{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
+# 	'{"enabled" = 0;"name" = "MENU_OTHER";}' \
+# 	'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
+# 	'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
+# 	'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
+# 	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
+# # Load new settings before rebuilding the index
+# killall mds > /dev/null 2>&1
+# # Make sure indexing is enabled for the main volume
+# sudo mdutil -i on / > /dev/null
+# # Rebuild the index from scratch
+# sudo mdutil -E / > /dev/null
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
@@ -634,51 +650,51 @@ sudo mdutil -E / > /dev/null
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
-osascript <<EOD
+# osascript <<EOD
 
-tell application "Terminal"
+# tell application "Terminal"
 
-	local allOpenedWindows
-	local initialOpenedWindows
-	local windowID
-	set themeName to "Solarized Dark xterm-256color"
+# 	local allOpenedWindows
+# 	local initialOpenedWindows
+# 	local windowID
+# 	set themeName to "Solarized Dark xterm-256color"
 
-	(* Store the IDs of all the open terminal windows. *)
-	set initialOpenedWindows to id of every window
+# 	(* Store the IDs of all the open terminal windows. *)
+# 	set initialOpenedWindows to id of every window
 
-	(* Open the custom theme so that it gets added to the list
-	   of available terminal themes (note: this will open two
-	   additional terminal windows). *)
-	do shell script "open '$HOME/init/" & themeName & ".terminal'"
+# 	(* Open the custom theme so that it gets added to the list
+# 	   of available terminal themes (note: this will open two
+# 	   additional terminal windows). *)
+# 	do shell script "open '$HOME/init/" & themeName & ".terminal'"
 
-	(* Wait a little bit to ensure that the custom theme is added. *)
-	delay 1
+# 	(* Wait a little bit to ensure that the custom theme is added. *)
+# 	delay 1
 
-	(* Set the custom theme as the default terminal theme. *)
-	set default settings to settings set themeName
+# 	(* Set the custom theme as the default terminal theme. *)
+# 	set default settings to settings set themeName
 
-	(* Get the IDs of all the currently opened terminal windows. *)
-	set allOpenedWindows to id of every window
+# 	(* Get the IDs of all the currently opened terminal windows. *)
+# 	set allOpenedWindows to id of every window
 
-	repeat with windowID in allOpenedWindows
+# 	repeat with windowID in allOpenedWindows
 
-		(* Close the additional windows that were opened in order
-		   to add the custom theme to the list of terminal themes. *)
-		if initialOpenedWindows does not contain windowID then
-			close (every window whose id is windowID)
+# 		(* Close the additional windows that were opened in order
+# 		   to add the custom theme to the list of terminal themes. *)
+# 		if initialOpenedWindows does not contain windowID then
+# 			close (every window whose id is windowID)
 
-		(* Change the theme for the initial opened terminal windows
-		   to remove the need to close them in order for the custom
-		   theme to be applied. *)
-		else
-			set current settings of tabs of (every window whose id is windowID) to settings set themeName
-		end if
+# 		(* Change the theme for the initial opened terminal windows
+# 		   to remove the need to close them in order for the custom
+# 		   theme to be applied. *)
+# 		else
+# 			set current settings of tabs of (every window whose id is windowID) to settings set themeName
+# 		end if
 
-	end repeat
+# 	end repeat
 
-end tell
+# end tell
 
-EOD
+# EOD
 
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # i.e. hover over a window and start typing in it without clicking first
@@ -693,7 +709,7 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/init/Solarized Dark.itermcolors"
+# open "${HOME}/init/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
@@ -706,7 +722,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -823,36 +839,13 @@ defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 ###############################################################################
-# GPGMail 2                                                                   #
-###############################################################################
-
-# Disable signing emails by default
-# defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
-
-###############################################################################
-# Opera & Opera Developer                                                     #
-###############################################################################
-
-# Expand the print dialog by default
-# defaults write com.operasoftware.Opera PMPrintingExpandedStateForPrint2 -boolean true
-# defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
-
-###############################################################################
-# SizeUp.app                                                                  #
-###############################################################################
-
-# # Start SizeUp at login
-# defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
-
-# # Don’t show the preferences window on next start
-# defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
-
-###############################################################################
 # Sublime Text                                                                #
 ###############################################################################
 
 # Install Sublime Text settings
 # cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+# TODO:: hide minimap?
 
 ###############################################################################
 # Spectacle.app                                                               #
@@ -898,38 +891,6 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 defaults write org.m0k.transmission RandomPort -bool true
 
 ###############################################################################
-# Twitter.app                                                                 #
-###############################################################################
-
-# # Disable smart quotes as it’s annoying for code tweets
-# defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
-
-# # Show the app window when clicking the menu bar icon
-# defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
-
-# # Enable the hidden ‘Develop’ menu
-# defaults write com.twitter.twitter-mac ShowDevelopMenu -bool true
-
-# # Open links in the background
-# defaults write com.twitter.twitter-mac openLinksInBackground -bool true
-
-# # Allow closing the ‘new tweet’ window by pressing `Esc`
-# defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
-
-# # Show full names rather than Twitter handles
-# defaults write com.twitter.twitter-mac ShowFullNames -bool true
-
-# # Hide the app in the background if it’s not the front-most window
-# defaults write com.twitter.twitter-mac HideInBackground -bool true
-
-###############################################################################
-# Tweetbot.app                                                                #
-###############################################################################
-
-# Bypass the annoyingly slow t.co URL shortener
-# defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
-
-###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
@@ -947,13 +908,10 @@ for app in "Activity Monitor" \
 	"Opera" \
 	"Photos" \
 	"Safari" \
-	# "SizeUp" \
 	"Spectacle" \
 	"SystemUIServer" \
 	"Terminal" \
 	"Transmission" \
-	# "Tweetbot" \
-	# "Twitter" \
 	"iCal"; do
 	killall "${app}" &> /dev/null
 done
