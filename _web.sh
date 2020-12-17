@@ -33,14 +33,16 @@ brew install node
 
 brew install gitlab-runner
 
-
-
 brew cask install ampps
 brew cask install betterzip
 brew cask install db-browser-for-sqlite
 brew cask install diffmerge
 brew cask install firefox
+
+# fonts
 brew cask install font-inconsolata
+brew cask install font-jetbrains-mono
+
 brew cask install github-desktop
 brew cask install google-chrome
 brew cask install google-drive

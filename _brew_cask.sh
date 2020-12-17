@@ -30,23 +30,26 @@ brew cask install appcleaner
 brew cask install betterzip
 brew cask install blender
 brew cask install ccleaner
+brew cask install copyclip
 brew cask install db-browser-for-sqlite
+brew cask install diffmerge
+brew cask install discord
 brew cask install disk-inventory-x
 brew cask install dropbox
-brew cask install etcher
 brew cask install firefox
 brew cask install flux
-# brew cask install font-inconsolata # doesn't work anymo0re
+brew cask install font-inconsolata
+brew cask install font-jetbrains-mono
 brew cask install franz
+brew cask install free-ruler
 brew cask install freeplane
 brew cask install fritzing
 brew cask install gimp
-# brew cask install github-desktop # not?
 brew cask install google-chrome
-# brew cask install google-drive # not?
 brew cask install imageoptim
 brew cask install inkscape
 brew cask install iterm2
+brew cask install itsycal
 brew cask install jumpcut
 brew cask install kap
 brew cask install keepassxc
@@ -54,7 +57,7 @@ brew cask install libreoffice
 brew cask install licecap
 brew cask install lmms
 brew cask install macdown
-brew cask install mongobooster
+brew cask install microsoft-teams
 brew cask install mucommander
 brew cask install obs
 brew cask install processing
@@ -68,23 +71,25 @@ brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install quicklookase
 brew cask install scribus-dev
+brew cask install seashore
 brew cask install sketch
+brew cask install sketchup
 brew cask install skype
 brew cask install slack
 brew cask install sourcetree
 brew cask install spectacle
 brew cask install spotifree
 brew cask install spotify
-brew cask install sqlitebrowser
 brew cask install sublime-text
 brew cask install suspicious-package
+brew cask install synfigstudio
 brew cask install the-unarchiver
-# brew cask install tiddlywiki
 brew cask install tiddly
 brew cask install transmission
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install webpquicklook
+brew cask install zoomus
 
 # Remove outdated versions from the cellar.
 brew cleanup
