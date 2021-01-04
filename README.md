@@ -171,3 +171,9 @@ Inspiration for the-mac-setup:
 - <https://gist.github.com/g3d/2709563>
 - <https://github.com/mathiasbynens/dotfiles/blob/master/.macos>
 - <https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03>
+
+## hu?
+
+```
+killall Dock
+```
