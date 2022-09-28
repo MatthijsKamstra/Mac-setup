@@ -74,7 +74,6 @@ brew install --cask diffmerge
 # brew install --cask postman
 # brew install --cask filezilla // removed
 # brew install --cask mamp
-brew install --cask iterm2
 # brew install --cask gitx
 
 
