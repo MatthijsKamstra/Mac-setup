@@ -27,12 +27,12 @@ brew install imagemagick --with-webp
 brew install ffmpeg
 
 # screen capture
-brew cask install kap
-brew cask install licecap
-brew cask install obs
+brew install --cask kap
+brew install --cask licecap
+brew install --cask obs
 
 # convert screen captures to different movie/gif
-brew cask install imageoptim
+brew install --cask imageoptim
 brew install gifsicle
 
 # Remove outdated versions from the cellar.

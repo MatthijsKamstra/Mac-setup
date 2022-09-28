@@ -28,14 +28,14 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 brew tap caskroom/fonts                  # you only have to do this once!
-brew cask install font-inconsolata
+brew install --cask font-inconsolata
 
 # go!
-brew cask install adobe-creative-cloud
-brew cask install gimp
-brew cask install inkscape
-brew cask install licecap
-brew cask install sketch
+brew install --cask adobe-creative-cloud
+brew install --cask gimp
+brew install --cask inkscape
+brew install --cask licecap
+brew install --cask sketch
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -35,47 +35,47 @@ brew install node
 # brew tap caskroom/versions
 
 # develop
-# brew cask install virtualhostx
-brew cask install sourcetree
-brew cask install github-desktop
-brew cask install sqlitebrowser
+# brew install --cask virtualhostx
+brew install --cask sourcetree
+brew install --cask github-desktop
+brew install --cask sqlitebrowser
 
 # Web-editors
-# brew cask install atom
-# brew cask install brackets
-brew cask install sublime-text
-brew cask install visual-studio-code
+# brew install --cask atom
+# brew install --cask brackets
+brew install --cask sublime-text
+brew install --cask visual-studio-code
 
 # Development tool casks
-# brew cask install virtualbox
-brew cask install mucommander
+# brew install --cask virtualbox
+brew install --cask mucommander
 
 # Misc casks
-brew cask install firefox
-# brew cask install charles
-# brew cask install gitx
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install imageoptim
-# brew cask install name-mangler
-# brew cask install dash
-brew cask install the-unarchiver
-brew cask install macdown
-# brew cask install paw
-# brew cask install postman
-# brew cask install charles
-brew cask install diffmerge
-brew cask install filezilla
-brew cask install mamp
+brew install --cask firefox
+# brew install --cask charles
+# brew install --cask gitx
+brew install --cask google-chrome
+brew install --cask google-drive
+brew install --cask imageoptim
+# brew install --cask name-mangler
+# brew install --cask dash
+brew install --cask the-unarchiver
+brew install --cask macdown
+# brew install --cask paw
+# brew install --cask postman
+# brew install --cask charles
+brew install --cask diffmerge
+brew install --cask filezilla
+brew install --cask mamp
 
 # Core casks
-brew cask install iterm2
-brew cask install sublime-text
-brew cask install sourcetree
-# brew cask install gitx
+brew install --cask iterm2
+brew install --cask sublime-text
+brew install --cask sourcetree
+# brew install --cask gitx
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup

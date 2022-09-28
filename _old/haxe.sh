@@ -29,17 +29,17 @@ brew tap caskroom/versions
 
 # fonts
 brew tap caskroom/fonts                  # you only have to do this once!
-brew cask install font-inconsolata
+brew install --cask font-inconsolata
 # font is not necessary but I need it from my sublime setup
 
 # possible Haxe editors (you probably want to choose one and stick with that)
 # web-based-editors
-brew cask install atom
-brew cask install brackets
-brew cask install sublime-text
-brew cask install visual-studio-code
+brew install --cask atom
+brew install --cask brackets
+brew install --cask sublime-text
+brew install --cask visual-studio-code
 # IDE
-brew cask install intellij-idea-ce
+brew install --cask intellij-idea-ce
 
 # I primarily use Sublime-text for Haxe development, so check out https://github.com/MatthijsKamstra/Mac-setup#sublime-text-setup for more settings/plugins/etc
 # Second favorite editor is Visual Studio Code, install https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe

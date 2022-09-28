@@ -33,33 +33,33 @@ brew install node
 
 brew install gitlab-runner
 
-brew cask install ampps
-brew cask install betterzip
-brew cask install db-browser-for-sqlite
-brew cask install diffmerge
-brew cask install firefox
+brew install --cask ampps
+brew install --cask betterzip
+brew install --cask db-browser-for-sqlite
+brew install --cask diffmerge
+brew install --cask firefox
 
 # fonts
-brew cask install font-inconsolata
-brew cask install font-jetbrains-mono
+brew install --cask font-inconsolata
+brew install --cask font-jetbrains-mono
 
-brew cask install github-desktop
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install imageoptim
-brew cask install iterm2
-brew cask install jumpcut
-brew cask install mongobooster
-brew cask install mucommander
+brew install --cask github-desktop
+brew install --cask google-chrome
+brew install --cask google-drive
+brew install --cask imageoptim
+brew install --cask iterm2
+brew install --cask jumpcut
+brew install --cask mongobooster
+brew install --cask mucommander
 
-brew cask install sourcetree
-brew cask install spectacle
-brew cask install sqlitebrowser
-brew cask install sublime-text
-brew cask install suspicious-package
-brew cask install the-unarchiver
-# brew cask install tiddlywiki
-brew cask install visual-studio-code
+brew install --cask sourcetree
+brew install --cask spectacle
+brew install --cask sqlitebrowser
+brew install --cask sublime-text
+brew install --cask suspicious-package
+brew install --cask the-unarchiver
+# brew install --cask tiddlywiki
+brew install --cask visual-studio-code
 
 
 
@@ -69,47 +69,47 @@ brew cask install visual-studio-code
 # brew tap caskroom/versions
 
 # develop
-# brew cask install virtualhostx
-brew cask install sourcetree
-brew cask install sqlitebrowser
+# brew install --cask virtualhostx
+brew install --cask sourcetree
+brew install --cask sqlitebrowser
 
 
 
 
 # editors
-# brew cask install atom
-# brew cask install brackets
-brew cask install sublime-text
-brew cask install visual-studio-code
+# brew install --cask atom
+# brew install --cask brackets
+brew install --cask sublime-text
+brew install --cask visual-studio-code
 
 # Development tool casks
-# brew cask install virtualbox
-brew cask install mucommander
+# brew install --cask virtualbox
+brew install --cask mucommander
 
 # Misc casks
-brew cask install firefox
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install imageoptim
-brew cask install the-unarchiver
-brew cask install macdown
-brew cask install diffmerge
-# brew cask install charles
-# brew cask install gitx
-# brew cask install name-mangler
-# brew cask install dash
-# brew cask install paw
-# brew cask install postman
-# brew cask install filezilla // removed
-# brew cask install mamp
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask google-drive
+brew install --cask imageoptim
+brew install --cask the-unarchiver
+brew install --cask macdown
+brew install --cask diffmerge
+# brew install --cask charles
+# brew install --cask gitx
+# brew install --cask name-mangler
+# brew install --cask dash
+# brew install --cask paw
+# brew install --cask postman
+# brew install --cask filezilla // removed
+# brew install --cask mamp
 
 # Core casks
-brew cask install iterm2
-brew cask install sourcetree
-# brew cask install gitx
+brew install --cask iterm2
+brew install --cask sourcetree
+# brew install --cask gitx
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup

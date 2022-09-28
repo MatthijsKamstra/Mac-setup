@@ -24,42 +24,42 @@ brew update
 brew upgrade
 
 # copy manager
-brew cask install copyclip
-brew cask install jumpcut
+brew install --cask copyclip
+brew install --cask jumpcut
 
 # window manager
-brew cask install spectacle
+brew install --cask spectacle
 
 # mini calender
-brew cask install itsycal
+brew install --cask itsycal
 
 # measure it
-brew cask install free-ruler
+brew install --cask free-ruler
 
 # flux
-brew cask install flux
+brew install --cask flux
 
 # not sleeping
-# brew cask install caffeine
+# brew install --cask caffeine
 
 # something something
-# brew cask install macs-fan-control
-# brew cask install intel-power-gadget
+# brew install --cask macs-fan-control
+# brew install --cask intel-power-gadget
 
 # cleaners
-# brew cask install ccleaner
-# brew cask install appcleaner
+# brew install --cask ccleaner
+# brew install --cask appcleaner
 
 # unzipping
-# brew cask install betterzip
+# brew install --cask betterzip
 
 # screengrabbing
-# brew cask install kap
-# brew cask install licecap
+# brew install --cask kap
+# brew install --cask licecap
 
 # finder plus
-# brew cask install commander-one
-brew cask install mucommander
+# brew install --cask commander-one
+brew install --cask mucommander
 
 
 # Remove outdated versions from the cellar.

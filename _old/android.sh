@@ -28,12 +28,12 @@ brew update
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-brew cask install java
-brew cask install intellij-idea-ce
-brew cask install android-studio
+brew install --cask java
+brew install --cask intellij-idea-ce
+brew install --cask android-studio
 # Install HAXM for blazing fast emulators.
-brew cask install intel-haxm
-brew cask install genymotion
+brew install --cask intel-haxm
+brew install --cask genymotion
 
 # make sure java is installed
 

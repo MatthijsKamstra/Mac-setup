@@ -22,7 +22,7 @@ brew update
 
 # node
 # brew install node
-brew install node@14
+brew install node
 
 # global installs
 # npm install -g npm # ?

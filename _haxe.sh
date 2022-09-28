@@ -27,13 +27,13 @@ brew upgrade
 # brew install haxe # not sure I want to do this
 
 # Haxe editors (you probably want to choose one and stick with that)
-brew cask install visual-studio-code
-brew cask install sublime-text
-# brew cask install atom
-# brew cask install brackets
+brew install --cask visual-studio-code
+brew install --cask sublime-text
+# brew install --cask atom
+# brew install --cask brackets
 
 # IDE
-# brew cask install intellij-idea-ce
+# brew install --cask intellij-idea-ce
 
 # Favorite editor is Visual Studio Code, install https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe
 # I primarily use Sublime-text for Haxe development, so check out https://github.com/MatthijsKamstra/Mac-setup#sublime-text-setup for more settings/plugins/etc

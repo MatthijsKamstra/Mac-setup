@@ -35,56 +35,56 @@ brew install node
 # brew install haxe
 
 # develop git related
-brew cask install sourcetree
+brew install --cask sourcetree
 
 # editors
-brew cask install sublime-text
-brew cask install visual-studio-code
+brew install --cask sublime-text
+brew install --cask visual-studio-code
 
 # Development tool casks
-brew cask install iterm2
+brew install --cask iterm2
 
 # browser
-brew cask install google-chrome
-brew cask install firefox
+brew install --cask google-chrome
+brew install --cask firefox
 
 # storage
-brew cask install dropbox
-brew cask install google-drive
+brew install --cask dropbox
+brew install --cask google-drive
 
 # record
-brew cask install licecap
+brew install --cask licecap
 brew install gifsicle
-brew cask install kap
+brew install --cask kap
 
 # optimalisation
-brew cask install imageoptim
+brew install --cask imageoptim
 
 # map ideas
-brew cask install freeplane
+brew install --cask freeplane
 
 # design tools
-brew cask install adobe-creative-cloud
-brew cask install gimp
-brew cask install inkscape
-brew cask install sketch
-brew cask install sketchup
-brew cask install seashore
-brew cask install scribus
-brew cask install synfigstudio
-brew cask install blender
+brew install --cask adobe-creative-cloud
+brew install --cask gimp
+brew install --cask inkscape
+brew install --cask sketch
+brew install --cask sketchup
+brew install --cask seashore
+brew install --cask scribus
+brew install --cask synfigstudio
+brew install --cask blender
 
 # finder +
-brew cask install muCommander
+brew install --cask muCommander
 
 # text-editors
-brew cask install macdown
-# brew cask install libreoffice
+brew install --cask macdown
+# brew install --cask libreoffice
 
 # sound // video
-brew cask install vlc
-brew cask install spotify
-brew cask install spotifree
+brew install --cask vlc
+brew install --cask spotify
+brew install --cask spotifree
 
 # Remove outdated versions from the cellar.
 brew cleanup

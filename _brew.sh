@@ -32,7 +32,7 @@ brew upgrade
 
 # fonts
 # brew tap caskroom/fonts                  # you only have to do this once!
-# brew cask install font-inconsolata
+# brew install --cask font-inconsolata
 
 # Install other useful binaries.
 brew install git
@@ -44,8 +44,8 @@ brew install youtube-dl
 brew install ffmpeg
 brew install node
 # brew install haxe
-brew install imagemagick
-brew install imagemagick --with-webp
+# brew install imagemagick
+# brew install imagemagick --with-webp
 # brew install transmission # don't want the cli
 
 # # Install Cask
@@ -53,104 +53,109 @@ brew install imagemagick --with-webp
 # brew tap caskroom/versions
 
 # develop
-# brew cask install virtualhostx
-brew cask install sourcetree
-brew cask install github-desktop
-brew cask install sqlitebrowser
+# brew install --cask virtualhostx
+brew install --cask sourcetree
+brew install --cask github-desktop
+brew install --cask sqlitebrowser
 
 # Android
 # brew install ant
 # brew install maven
 # brew install gradle
 # brew install android-sdk
-# brew cask install android-studio
-# brew cask install genymotion
-# brew cask install java
+# brew install --cask android-studio
+# brew install --cask genymotion
+# brew install --cask java
 
 # web-editors
-# brew cask install atom
-# brew cask install brackets
-brew cask install sublime-text
-brew cask install visual-studio-code
+# brew install --cask atom
+# brew install --cask brackets
+brew install --cask sublime-text
+brew install --cask visual-studio-code
 
 # Core casks
-# brew cask install xquartz
+# brew install --cask xquartz
 
 # Development tool casks
-brew cask install iterm2
-brew cask install sublime-text
-# brew cask install atom
-# brew cask install virtualbox
-brew cask install macdown
+brew install --cask iterm2
+brew install --cask sublime-text
+# brew install --cask atom
+# brew install --cask virtualbox
+brew install --cask macdown
 
 # webdevelop
-brew cask install google-chrome
-brew cask install firefox
-brew cask install imageoptim
-brew cask install ampps
-# brew cask install mamp
-# brew cask install gitx
-# brew cask install filezilla
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask imageoptim
+brew install --cask ampps
+# brew install --cask mamp
+# brew install --cask gitx
+# brew install --cask filezilla
 
 # same but how to describe this
-# brew cask install paw
-# brew cask install postman
-# brew cask install charles
+# brew install --cask paw
+# brew install --cask postman
+# brew install --cask charles
 
-# brew cask install dash
+# brew install --cask dash
 
 # communication
-brew cask install skype
-brew cask install slack
-brew cask install franz
+brew install --cask skype
+brew install --cask slack
+brew install --cask franz
 
 # storage
-brew cask install dropbox
-brew cask install google-drive
+brew install --cask dropbox
+brew install --cask google-drive
 
 # design
-brew cask install licecap
-brew cask install adobe-creative-cloud
-# brew cask install freemind # use freeplane now
-brew cask install freeplane
-brew cask install gimp
-brew cask install inkscape
+brew install --cask licecap
+# brew install --cask adobe-creative-cloud # not needed for now
+# brew install --cask freemind # use freeplane now
+brew install --cask freeplane
+brew install --cask gimp
+brew install --cask inkscape
 
 # compare files / folders /images
-brew cask install diffmerge
-# brew cask install dupeguru
+brew install --cask diffmerge
+# brew install --cask dupeguru
 
 # text-editors
-brew cask install macdown
-brew cask install libreoffice
+brew install --cask macdown
+brew install --cask libreoffice
 
 # sound // video
-# brew cask install handbrake
-brew cask install vlc
-# brew cask install audacity ## doesn't exist anymore
-brew cask install spotify
-brew cask install spotifree
-brew cask install kap
-brew cask install licecap
+# brew install --cask handbrake
+brew install --cask vlc
+# brew install --cask audacity ## doesn't exist anymore
+brew install --cask spotify
+# brew install --cask spotifree # cheap, bought a license
+brew install --cask kap
+brew install --cask licecap
 
 # misc
-brew cask install spectacle
-# brew cask install antirsi
-brew cask install appcleaner
-brew cask install keepassxc
-# brew cask install caffeine
-brew cask install ccleaner
-brew cask install flux
-# brew cask install name-mangler
-brew cask install the-unarchiver
-brew cask install tiddlywiki
-# brew cask install intellij-idea-ce
-# brew cask install sdformatter
-brew cask install transmission
+brew install --cask spectacle
+# brew install --cask antirsi
+brew install --cask appcleaner
+brew install --cask keepassxc
+# brew install --cask caffeine
+brew install --cask ccleaner
+brew install --cask flux
+# brew install --cask name-mangler
+brew install --cask the-unarchiver
+brew install --cask tiddlywiki
+# brew install --cask intellij-idea-ce
+# brew install --cask sdformatter
+# brew install --cask transmission # might be frowned upon
 
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+# brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo qlprettypatch quicklook-csv betterzipql
+
+# might need to following commands
+# xattr -r ~/Library/QuickLook
+# xattr -d -r com.apple.quarantine ~/Library/QuickLook
 
 # Remove outdated versions from the cellar.
 brew cleanup

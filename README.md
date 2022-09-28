@@ -9,11 +9,25 @@ There is a lot of duplicates in the scripts, I need to sort it out.
 
 # Prerequisites
 
-I tried to minimise the manual steps as much as I could. These still remain...
+I tried to minimize the manual steps as much as I could. These still remain...
 
 - XCode is installed (via the App Store)
 - Install Xcode from the Apple store and accept TOS
 - XCode command line tools are installed (xcode-select --install will prompt up a dialog)
+
+### That should be done with a script
+
+- open https://raw.githubusercontent.com/MatthijsKamstra/Mac-setup/master/_clean.sh
+- save on your computer (cmd + s)
+- open that folder `cd path/to/saved/folder`
+- run script `sh _clean.sh`
+
+it will install:
+
+- xcode
+- brew
+- git
+
 
 # Create backup
 
@@ -39,22 +53,12 @@ cd Mac-setup
 sh _backup_settings.sh
 ```
 
-# okay, empty computer has no git
-
-- open https://raw.githubusercontent.com/MatthijsKamstra/Mac-setup/master/_clean.sh
-- save on your computer (cmd + s)
-- open that folder `cd path/to/saved/folder`
-- run script `sh _clean.sh`
-
-it will install:
-
-- xcode
-- brew
-- git
 
 # Start
 
 Download or clone this repository.
+
+This script starts everything, probably only useful for me
 
 ```
 git clone https://github.com/MatthijsKamstra/Mac-setup.git

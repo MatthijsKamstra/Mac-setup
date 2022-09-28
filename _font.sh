@@ -29,9 +29,9 @@ brew tap homebrew/cask
 # fonts
 brew tap homebrew/cask-fonts         # You only need to do this once!
 #  install fonts
-brew cask install font-inconsolata
-brew cask install font-jetbrains-mono
-# brew cask install font-jetbrains-mono-nerd-font
+brew install --cask font-inconsolata
+brew install --cask font-jetbrains-mono
+# brew install --cask font-jetbrains-mono-nerd-font
 
 # all fonts installable via brew
 # brew search "/font-/"
