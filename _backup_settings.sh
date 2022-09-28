@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Backup settins from different programmes I use regular ..."
+echo "Backup settings from different programs I use regular..."
 
 # - dotfiles
 # - ssh
@@ -27,6 +27,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 EXPORT_FOLDER=export_don_t_upload
 
 # create folder (if needed)
+# create a folder with the files in it, in the folder structure you run the script in
 mkdir -p ${EXPORT_FOLDER}
 
 
@@ -45,7 +46,7 @@ cp -r ~/.ssh/ ${EXPORT_FOLDER}/ssh
 touch ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
 echo "~/.ssh/" > ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/ssh.zip ${EXPORT_FOLDER}/ssh
+zip -r ${EXPORT_FOLDER}/_ssh.zip ${EXPORT_FOLDER}/ssh
 
 # dotfile
 echo '├── dotfile'
@@ -65,7 +66,7 @@ cp -r ~/.ssh ${EXPORT_FOLDER}/dotfile/
 touch ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
 echo "~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/dotfile.zip ${EXPORT_FOLDER}/dotfile
+zip -r ${EXPORT_FOLDER}/_dotfile.zip ${EXPORT_FOLDER}/dotfile
 
 
 
@@ -89,7 +90,7 @@ cp -r ~/Library/Application\ Support/Code/User/snippets ${EXPORT_FOLDER}/vscode/
 touch ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
 echo "~/Library/Application Support/Code/User/" > ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/vscode.zip ${EXPORT_FOLDER}/vscode
+zip -r ${EXPORT_FOLDER}/_vscode.zip ${EXPORT_FOLDER}/vscode
 
 # Sourcetree
 echo '├── Sourcetree'
@@ -102,7 +103,7 @@ cp -r ~/Library/Application\ Support/SourceTree/ ${EXPORT_FOLDER}/SourceTree
 touch ${EXPORT_FOLDER}/SourceTree/__delete__this__file.txt
 echo "~/Library/Application Support/SourceTree/" > ${EXPORT_FOLDER}/SourceTree/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/SourceTree.zip ${EXPORT_FOLDER}/SourceTree
+zip -r ${EXPORT_FOLDER}/_SourceTree.zip ${EXPORT_FOLDER}/SourceTree
 
 
 # FileZilla
@@ -115,7 +116,7 @@ cp -r ~/.config/filezilla/ ${EXPORT_FOLDER}/filezilla
 touch ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
 echo "~/.config/filezilla/" > ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/filezilla.zip ${EXPORT_FOLDER}/filezilla
+zip -r ${EXPORT_FOLDER}/_filezilla.zip ${EXPORT_FOLDER}/filezilla
 
 # sublimetext
 echo '├── sublimetext'
@@ -130,7 +131,7 @@ cp -r  ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ${EXPORT_FO
 touch ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
 echo "~/Library/Application Support/Sublime Text 3/Packages/User" > ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/sublimetext.zip ${EXPORT_FOLDER}/sublimetext
+zip -r ${EXPORT_FOLDER}/_sublimetext.zip ${EXPORT_FOLDER}/sublimetext
 
 
 ############################################
@@ -157,6 +158,7 @@ echo '├── Haxe'
 haxelib list > ${EXPORT_FOLDER}/haxelib_list.txt
 
 # Adobe
+# the next phase of my career will probably be without Adobe
 echo '├── Adobe'
 mkdir -p ${EXPORT_FOLDER}/adobe
 # open ~/.adobe/
@@ -166,7 +168,7 @@ cp -r ~/.adobe/ ${EXPORT_FOLDER}/adobe
 touch ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
 echo "~/.adobe/" > ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/adobe.zip ${EXPORT_FOLDER}/adobe
+zip -r ${EXPORT_FOLDER}/_adobe.zip ${EXPORT_FOLDER}/adobe
 
 
 
@@ -184,7 +186,7 @@ cp -r ~/Library/Fonts/ ${EXPORT_FOLDER}/fonts
 touch ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
 echo "~/Library/Fonts" > ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/fonts.zip ${EXPORT_FOLDER}/fonts
+zip -r ${EXPORT_FOLDER}/_fonts.zip ${EXPORT_FOLDER}/fonts
 
 
 
