@@ -15,6 +15,9 @@ echo "Backup settings from different programs I use regular..."
 # - haxe
 # - Adobe?
 # - Fonts
+# - Inkscape settings?
+# - Gimp settings?
+# - KeepassX? (or don't forget!)
 
 
 # Ask for the administrator password upfront.

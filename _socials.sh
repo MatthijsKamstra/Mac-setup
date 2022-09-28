@@ -25,11 +25,11 @@ brew upgrade --all
 
 # quick and dirty install casks
 brew install --cask franz
-brew install --cask skype
-brew install --cask slack
-brew install --cask discord
-brew install --cask zoomus
-brew install --cask microsoft-teams
+# brew install --cask skype
+# brew install --cask slack
+# brew install --cask discord
+# brew install --cask zoomus
+# brew install --cask microsoft-teams
 
 # Remove outdated versions from the cellar.
 brew cleanup

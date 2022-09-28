@@ -12,7 +12,7 @@ echo "Programs install that are not in the Apple store or via Brew"
 echo 'Filezilla --> https://filezilla-project.org/download.php?platform=osx';
 
 
-echo 'desktop.github --> https://desktop.github.com/'
+# echo 'desktop.github --> https://desktop.github.com/'
 
 
 # https://apps.apple.com/us/app/noizio/id928871589

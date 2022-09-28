@@ -22,27 +22,62 @@ brew update
 brew upgrade
 
 # quick and dirty install casks
-brew install emscripten
+
+# older list
+
+# brew install emscripten
+# brew install ffmpeg
+# brew install git
+# brew install git-extras
+# brew install git-flow
+# brew install gitlab-runner
+# brew install heroku
+# brew install heroku-node
+# brew install imagemagick
+# brew install libsass
+# brew install lua
+# brew install luarocks
+# brew install mariadb
+# brew install mongodb-community
+# brew install node
+# brew install pandoc
+# brew install python
+# brew install python3
+# brew install python@3.8
+# brew install sqlite
+# brew install youtube-dl
+
+
+# same again, just a list
+#
+
+brew install aspell
+# brew install composer
+# brew install docbook
+# brew install docbook-xsl
+# brew install emscripten
 brew install ffmpeg
+# brew install gifsicle
 brew install git
 brew install git-extras
 brew install git-flow
+brew install git-lfs
 brew install gitlab-runner
-brew install heroku
-brew install heroku-node
+brew install glib
 brew install imagemagick
-brew install libsass
-brew install lua
-brew install luarocks
-brew install mariadb
-brew install mongodb-community
+# brew install lua
+# brew install luarocks
+# brew install mariadb
 brew install node
 brew install pandoc
-brew install python
-brew install python3
-brew install python@3.8
-brew install sqlite
+# brew install python
+# brew install sqlite
+brew install tree
+# brew install webp
 brew install youtube-dl
+# brew install yuicompressor
+brew install zsh-syntax-highlighting
+
 
 
 # Remove outdated versions from the cellar.

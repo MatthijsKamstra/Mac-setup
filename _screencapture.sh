@@ -22,18 +22,18 @@ brew update
 brew upgrade
 
 # convert to different formats
-brew install imagemagick
+# brew install imagemagick
 brew install imagemagick --with-webp
 brew install ffmpeg
 
 # screen capture
 brew install --cask kap
 brew install --cask licecap
-brew install --cask obs
+# brew install --cask obs
 
 # convert screen captures to different movie/gif
 brew install --cask imageoptim
-brew install gifsicle
+# brew install gifsicle
 
 # Remove outdated versions from the cellar.
 brew cleanup

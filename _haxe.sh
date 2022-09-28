@@ -2,6 +2,10 @@
 
 echo "Setup Haxe ..."
 
+# ugh, not really usefull at this moment.
+# I rather install Haxe via the installer
+# and visueal studio and sublime are probably installed via other script
+
 # Install command-line tools using Homebrew.
 
 # Ask for the administrator password upfront.
@@ -42,29 +46,29 @@ brew install --cask sublime-text
 brew cleanup
 
 
-# Set the haxelib path
-haxelib setup /usr/local/lib/haxe/lib/
+# # Set the haxelib path
+# haxelib setup /usr/local/lib/haxe/lib/
 
 
-# haxelib (s) I use
-haxelib install csv
-haxelib install electron
-haxelib install express
-haxelib install format
-haxelib install haxelow
-haxelib install hxColorToolkit
-haxelib install hxcpp
-haxelib install hxjava
-haxelib install hxnodejs
-haxelib install hxssl
-haxelib install jQueryExtern
-haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
-haxelib install markdown
-haxelib install msignal
-haxelib install npm
-haxelib install refactor
-# haxelib install svglib: [dev:/path/to/svg/src]
-haxelib install tjson
+# # haxelib (s) I use
+# haxelib install csv
+# haxelib install electron
+# haxelib install express
+# haxelib install format
+# haxelib install haxelow
+# haxelib install hxColorToolkit
+# haxelib install hxcpp
+# haxelib install hxjava
+# haxelib install hxnodejs
+# haxelib install hxssl
+# haxelib install jQueryExtern
+# haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
+# haxelib install markdown
+# haxelib install msignal
+# haxelib install npm
+# haxelib install refactor
+# # haxelib install svglib: [dev:/path/to/svg/src]
+# haxelib install tjson
 
 
 

@@ -27,7 +27,7 @@ brew upgrade
 brew install git
 brew install git-flow
 brew install git-extras
-brew install imagemagick
+# brew install imagemagick
 brew install imagemagick --with-webp
 brew install youtube-dl
 brew install ffmpeg
@@ -64,15 +64,15 @@ brew install --cask imageoptim
 brew install --cask freeplane
 
 # design tools
-brew install --cask adobe-creative-cloud
+# brew install --cask adobe-creative-cloud
 brew install --cask gimp
 brew install --cask inkscape
-brew install --cask sketch
-brew install --cask sketchup
-brew install --cask seashore
+# brew install --cask sketch
+# brew install --cask sketchup
+# brew install --cask seashore
 brew install --cask scribus
-brew install --cask synfigstudio
-brew install --cask blender
+# brew install --cask synfigstudio
+# brew install --cask blender
 
 # finder +
 brew install --cask muCommander
@@ -84,7 +84,7 @@ brew install --cask macdown
 # sound // video
 brew install --cask vlc
 brew install --cask spotify
-brew install --cask spotifree
+# brew install --cask spotifree
 
 # Remove outdated versions from the cellar.
 brew cleanup

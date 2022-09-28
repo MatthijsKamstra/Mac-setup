@@ -25,20 +25,46 @@ brew update
 brew install node
 
 # global installs
-# npm install -g npm # ?
-npm install -g gitbook-cli
-npm install -g node-sass
-npm install -g node-sass-chokidar
-npm install -g nodemon
-npm install -g npm-run-all
+
+# older install
+
+# # npm install -g npm # ?
+# npm install -g gitbook-cli
+# npm install -g node-sass
+# npm install -g node-sass-chokidar
+# npm install -g nodemon
+# npm install -g npm-run-all
+# npm install -g svgo
+
+
+# # npm install -g coffee-script
+# # npm install -g gulp
+# # npm install -g grunt-cli
+# # npm install -g jshint
+# # npm install -g less
+
+
+
+npm install -g @angular/cli
+npm install -g @lhci/cli
+npm install -g @neutralinojs/neu
+npm install -g docsify-cli
+npm install -g firebase-tools
+# npm install -g gitbook-cli
+# npm install -g gulp-cli
+# npm install -g lighthouse
+# npm install -g node-sass-chokidar
+# npm install -g node-sass
+# npm install -g nodemon
+# npm install -g npm-run-all
+# npm install -g npm
+# npm install -g qrcode
 npm install -g svgo
+npm install -g typescript
+# npm install -g uglify-js
 
 
-# npm install -g coffee-script
-# npm install -g gulp
-# npm install -g grunt-cli
-# npm install -g jshint
-# npm install -g less
+
 
 # Remove outdated versions from the cellar.
 brew cleanup

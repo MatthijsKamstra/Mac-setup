@@ -24,8 +24,9 @@ brew update
 brew upgrade
 
 # copy manager
-brew install --cask copyclip
-brew install --cask jumpcut
+# don't use this enough
+# brew install --cask copyclip
+# brew install --cask jumpcut
 
 # window manager
 brew install --cask spectacle
@@ -37,7 +38,7 @@ brew install --cask itsycal
 brew install --cask free-ruler
 
 # flux
-brew install --cask flux
+# brew install --cask flux
 
 # not sleeping
 # brew install --cask caffeine
@@ -52,7 +53,8 @@ brew install --cask flux
 
 # unzipping
 # brew install --cask betterzip
-
+# brew install --cask the-unarchiver # need to figure out which one I want to use
+#
 # screengrabbing
 # brew install --cask kap
 # brew install --cask licecap

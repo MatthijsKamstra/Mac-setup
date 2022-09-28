@@ -21,17 +21,18 @@ fi
 brew update
 
 # design
-brew install --cask adobe-creative-cloud
+# brew install --cask adobe-creative-cloud
 brew install --cask gimp
 brew install --cask inkscape
-brew install --cask sketch
-brew install --cask sketchup
-brew install --cask seashore
+# brew install --cask sketch
+# brew install --cask sketchup
+# brew install --cask seashore
 brew install --cask scribus
-brew install --cask scribus-dev
-brew install --cask synfigstudio
+# brew install --cask scribus-dev
+# brew install --cask synfigstudio
 brew install --cask blender
 # brew install --cask krita
+# brew install --cask canva
 
 # Remove outdated versions from the cellar.
 brew cleanup
