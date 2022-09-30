@@ -5,7 +5,7 @@ My Mac OS X development environment setup. Automated setup scripts for developer
 # Reminder
 
 I use this script to fully provision **my** development machine.
-There is a lot of duplicates in the scripts, I need to sort it out.
+There is a lot of duplicates in the scripts, I need to sort it out (or not).
 
 # Prerequisites
 
@@ -17,15 +17,20 @@ I tried to minimize the manual steps as much as I could. These still remain...
 
 ### That should be done with a script
 
+- open safari (on a clean machine no other browsers yet)
 - open https://raw.githubusercontent.com/MatthijsKamstra/Mac-setup/master/_clean.sh
+- or https://github.com/MatthijsKamstra/Mac-setup
+- add to the safari favourites ( CMD+D )
 - save on your computer (cmd + s)
+- rename file to extension `.sh`
+- open terminal (default) ->? CMD + space : type terminal
 - open that folder `cd path/to/saved/folder`
 - run script `sh _clean.sh`
 
 it will install:
 
 - xcode
-- brew
+- brew (https://brew.sh/)
 - git
 
 
