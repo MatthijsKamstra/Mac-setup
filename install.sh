@@ -54,8 +54,14 @@
 
 
 # start from zero
-sh _clean.sh
-sh _osxprep.sh
+
+
+# not realistic
+# sh _clean.sh
+# sh _osxprep.sh
+
+
+
 # beat osx into shape
 sh _macos.sh
 

@@ -135,8 +135,11 @@ echo -e "\xee\x82\xa0" #> 
 ```bash
 brew install wget
 cd ~/Downloads
-wget https://raw.github.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors
+wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors
 ```
+
+
+// https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Light.itermcolors
 
 theme??
 
