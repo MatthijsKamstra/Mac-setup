@@ -128,7 +128,7 @@ brew install --cask spectacle
 brew install --cask appcleaner
 brew install --cask keepassxc
 # brew install --cask caffeine
-brew install --cask ccleaner
+# brew install --cask ccleaner # horror program
 brew install --cask flux
 # brew install --cask name-mangler
 # brew install --cask the-unarchiver
