@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup web ..."
+echo "🍺 Setup web ..."
 
 # Install command-line tools using Homebrew.
 

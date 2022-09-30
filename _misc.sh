@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup handy  ..."
+echo "🍺 Setup handy  ..."
 
 # Install command-line tools using Homebrew.
 

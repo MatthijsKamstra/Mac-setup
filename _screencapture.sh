@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup screencap.."
+echo "🍺 Setup screencap.."
 
 # Ask for the administrator password upfront.
 sudo -v

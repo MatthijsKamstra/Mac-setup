@@ -6,6 +6,10 @@
 # Choose what works for you
 #
 
+echo '🍺 Setting up EVERYTHING'
+
+
+
 # sh clean.sh
 
 # sh osxprep.sh

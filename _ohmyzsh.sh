@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Setup oh-my-zsh and iterm2 ..."
+echo "🍺 Setup oh-my-zsh and iterm2 ..."
 
 
 # Install command-line tools using Homebrew.

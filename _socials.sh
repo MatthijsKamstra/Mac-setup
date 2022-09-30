@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup socials (skype, discord, slack...)"
+echo "🍺 Setup socials (skype, discord, slack...)"
 
 # Install command-line tools using Homebrew.
 

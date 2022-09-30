@@ -7,7 +7,7 @@
 # 		https://raw.githubusercontent.com/donnemartin/dev-setup/master/osx.sh
 
 
-echo 'Setting up osx'
+echo '🍺 Setting up OSX'
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change

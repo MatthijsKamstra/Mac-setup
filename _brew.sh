@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup brew ..."
+echo "🍺 Setup brew ..."
 
 # not sure this is very helpfull anymore
 # maybe the split is better

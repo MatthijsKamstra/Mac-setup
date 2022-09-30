@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup Design ..."
+echo "🍺 Setup Design ..."
 
 # Install command-line tools using Homebrew.
 

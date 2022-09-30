@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Programs install that are not in the Apple store or via Brew"
+echo "🍺 Programs install that are not in the Apple store or via Brew"
 
 
 # echo 'SimpleNote --> https://apps.apple.com/us/app/simplenote/id692867256?ls=1&mt=12';

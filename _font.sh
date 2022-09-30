@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Install fonts via brew"
+echo "🍺  Install fonts via brew"
 
 # Install command-line tools using Homebrew.
 

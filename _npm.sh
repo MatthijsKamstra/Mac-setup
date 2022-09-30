@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup node.js via npm ..."
+echo "🍺 Setup node.js via npm ..."
 
 # Install command-line tools using Homebrew.
 

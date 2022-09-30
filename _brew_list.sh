@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup brew ..."
+echo "🍺 Setup brew ..."
 
 # Ask for the administrator password upfront.
 sudo -v

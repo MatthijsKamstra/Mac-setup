@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup creative coding ..."
+echo "🍺 Setup creative coding ..."
 
 # Install command-line tools using Homebrew.
 

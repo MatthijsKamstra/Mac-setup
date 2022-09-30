@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup Haxe ..."
+echo "🍺 Setup Haxe ..."
 
 # ugh, not really usefull at this moment.
 # I rather install Haxe via the installer

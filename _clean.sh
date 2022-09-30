@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup with a clean install ..."
+echo "🍺 Setup with a clean install ..."
 
 # Your mac is sooo fresh and so clean
 

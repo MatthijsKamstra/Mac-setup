@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup Haxe ..."
+echo "🍺 Setup Haxe ..."
 
 # Install command-line tools using Homebrew.
 

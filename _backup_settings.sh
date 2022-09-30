@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Backup settings from different programs I use regular..."
+echo "🍺 Backup settings from different programs I use regular..."
 
 # - dotfiles
 # - ssh

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setup Android ..."
+echo "🍺 Setup Android ..."
 
 # source:
 # 	  https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03
