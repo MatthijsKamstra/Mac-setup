@@ -65,9 +65,18 @@ cp -r ~/.haxelib ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.profile ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.zshrc ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.ssh ${EXPORT_FOLDER}/dotfile/
+
+
+# perhaps homebrew files
+cp -r ~/.zprofile ${EXPORT_FOLDER}/dotfile/
+
+
+# oh-my-zsh
+# the installer will rename an existing .zshrc file to .zshrc.pre-oh-my-zsh.
+
 # create instructions
 touch ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
-echo "~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
+echo "~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh\n~/.zprofile" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_dotfile.zip ${EXPORT_FOLDER}/dotfile
 
