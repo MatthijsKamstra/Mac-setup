@@ -7,7 +7,32 @@ My Mac OS X development environment setup. Automated setup scripts for developer
 I use this script to fully provision **my** development machine.
 There is a lot of duplicates in the scripts, I need to sort it out (or not).
 
-# Prerequisites
+# Create backup
+
+Before we can install a fresh computer, we want to backup the old settings
+
+- dotfiles
+- ssh
+- vscode
+- sourcetree
+- filezilla
+- sublimetext
+- brew
+- brew cask
+- npm
+- application folder
+- haxe
+- Adobe?
+- Fonts
+
+```
+git clone https://github.com/MatthijsKamstra/Mac-setup.git
+cd Mac-setup
+sh _backup_settings.sh
+```
+
+
+# Prerequisites new device
 
 I tried to minimize the manual steps as much as I could. These still remain...
 
@@ -34,29 +59,6 @@ it will install:
 - git
 
 
-# Create backup
-
-Before we can install a fresh computer, we want to backup the old settings
-
-- dotfiles
-- ssh
-- vscode
-- sourcetree
-- filezilla
-- sublimetext
-- brew
-- brew cask
-- npm
-- application folder
-- haxe
-- Adobe?
-- Fonts
-
-```
-git clone https://github.com/MatthijsKamstra/Mac-setup.git
-cd Mac-setup
-sh _backup_settings.sh
-```
 
 
 # Start
