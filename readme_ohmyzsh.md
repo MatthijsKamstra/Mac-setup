@@ -76,7 +76,7 @@ https://github.com/spaceship-prompt/spaceship-prompt
 ```bash
 # install spaceship theme
 brew install spaceship
-echo "source $(brew --prefix)/opt/spaceship/spaceship.zsh" >>! ~/.zshrc
+echo "→ source $(brew --prefix)/opt/spaceship/spaceship.zsh" >>! ~/.zshrc
 ````
 
 

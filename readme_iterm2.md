@@ -8,21 +8,21 @@
 
 ```bash
 # Specify the preferences directory
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/System/OSX/iTerm/settings"
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iTerm/settings"
 
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 ```
 
 
-```
+```bash
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 ```
 
 
 
-```
+```bash
 defaults write com.googlecode.iterm2 "Normal Font" -string "SourceCodePro-Regular"
 defaults write com.googlecode.iterm2 "Non Ascii Font" -string "SourceCodePro-Regular"
 ```

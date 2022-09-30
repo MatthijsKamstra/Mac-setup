@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "🍺 Pomodore..."
+echo "🦊 Pomodore..."
 
 
 # - Pomotroid.app (heel groot)

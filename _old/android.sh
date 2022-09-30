@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "🍺 Setup Android ..."
+echo "🦊 Setup Android ..."
 
 # source:
 # 	  https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03
@@ -17,7 +17,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
-  echo "Installing homebrew..."
+  echo "→ Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -54,7 +54,7 @@ android update sdk --no-ui
 
 # https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03
 
-echo "
+echo "→
 Update your environment variables:
 
 export ANT_HOME=/usr/local/opt/ant
@@ -65,7 +65,7 @@ export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
 
 "
 
-echo "
+echo "→
 Update your paths (bonus points to a better solution to the hardcoded build tools version):
 
 export PATH=$ANT_HOME/bin:$PATH
@@ -77,7 +77,7 @@ export PATH=$ANDROID_HOME/build-tools/19.1.0:$PATH
 
 "
 
-echo "
+echo "→
 
 Periodically run these commands again to ensure you're staying up to date:
 

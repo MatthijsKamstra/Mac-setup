@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "🍺 Setup brew ..."
+echo "🦊 Setup brew ..."
 
 # not sure this is very helpfull anymore
 # maybe the split is better
@@ -20,7 +20,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
-  echo "Installing homebrew..."
+  echo "→ Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -136,11 +136,12 @@ brew install --cask tiddlywiki
 # brew install --cask intellij-idea-ce
 # brew install --cask sdformatter
 # brew install --cask transmission # might be frowned upon
+brew install --cask betterzip # also for the quickloop plugin
 
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 # brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
-brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo qlprettypatch quicklook-csv betterzipql
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo qlprettypatch quicklook-csv
 
 # might need to following commands
 # xattr -r ~/Library/QuickLook

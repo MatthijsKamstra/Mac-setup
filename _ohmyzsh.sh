@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🍺 Setup oh-my-zsh and iterm2 ..."
+echo "🦊 Setup oh-my-zsh and iterm2 ..."
 
 
 # Install command-line tools using Homebrew.
@@ -14,7 +14,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
-  echo "Installing homebrew..."
+  echo "→ Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -37,12 +37,12 @@ cd ~/Downloads
 
 
 
-echo "Installing oh-my-zsh"
+echo "→ Installing oh-my-zsh"
 #  installing oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
-echo "Installing powerline fonts"
+echo "→ Installing powerline fonts"
 # Installing powerline fonts
 
 # clone
@@ -57,18 +57,18 @@ rm -rf fonts
 # or
 # sudo apt install fonts-powerline
 
-echo "Testing powerline fonts"
+echo "→ → Testing powerline fonts"
 # Testing powerline fonts
 echo -e "\xee\x82\xa0" #> 
 
 
-echo "Installing spaceship theme"
+echo "→ Installing spaceship theme"
 #  Installing shaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # Symlink spaceship.zsh-theme to your oh-my-zsh custom themes directory:
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
-echo "Installing plugins"
+echo "→ Installing plugins"
 # Installing plugins
 # zsh autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

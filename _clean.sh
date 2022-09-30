@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "🍺 Setup with a clean install ..."
+echo "🦊 Setup with a clean install ..."
 
 # Your mac is sooo fresh and so clean
 
@@ -14,14 +14,14 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Download and install Command Line Tools
 if [[ ! -x /usr/bin/gcc ]]; then
-  echo "Install xcode"
+  echo "→ Install xcode"
   xcode-select --install
 fi
 
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
-  echo "Installing homebrew..."
+  echo "→ Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # the next line should work... but not 100% sure it will
   echo '# Set PATH, MANPATH, etc., for Homebrew.' >> ~/.zprofile

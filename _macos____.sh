@@ -225,4 +225,4 @@ defaults write org.m0k.transmission WarningLegal -bool false
 
 
 
-echo "Done. Note that some of these changes require a logout/restart of your OS to take effect.  At a minimum, be sure to restart your Terminal."
+echo "→ Done. Note that some of these changes require a logout/restart of your OS to take effect.  At a minimum, be sure to restart your Terminal."

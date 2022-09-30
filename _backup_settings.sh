@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "🍺 Backup settings from different programs I use regular..."
+echo "🦊 Backup settings from different programs I use regular..."
 
 # - dotfiles
 # - ssh
@@ -12,12 +12,13 @@ echo "🍺 Backup settings from different programs I use regular..."
 # - brew cask
 # - npm
 # - application folder
-# - haxe
+# - Haxe
 # - Adobe?
 # - Fonts
 # - Inkscape settings?
 # - Gimp settings?
 # - KeepassX? (or don't forget!)
+# - iTerm2
 
 
 # Ask for the administrator password upfront.
@@ -47,7 +48,7 @@ mkdir -p ${EXPORT_FOLDER}/ssh
 cp -r ~/.ssh/ ${EXPORT_FOLDER}/ssh
 # create instructions
 touch ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
-echo "~/.ssh/" > ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
+echo "→ ~/.ssh/" > ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_ssh.zip ${EXPORT_FOLDER}/ssh
 
@@ -76,7 +77,7 @@ cp -r ~/.zprofile ${EXPORT_FOLDER}/dotfile/
 
 # create instructions
 touch ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
-echo "~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh\n~/.zprofile" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
+echo "→ ~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh\n~/.zprofile" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_dotfile.zip ${EXPORT_FOLDER}/dotfile
 
@@ -100,7 +101,7 @@ cp -r ~/Library/Application\ Support/Code/User/keybindings.json ${EXPORT_FOLDER}
 cp -r ~/Library/Application\ Support/Code/User/snippets ${EXPORT_FOLDER}/vscode/
 # create instructions
 touch ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
-echo "~/Library/Application Support/Code/User/" > ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
+echo "→ ~/Library/Application Support/Code/User/" > ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_vscode.zip ${EXPORT_FOLDER}/vscode
 
@@ -113,7 +114,7 @@ mkdir -p ${EXPORT_FOLDER}/SourceTree
 cp -r ~/Library/Application\ Support/SourceTree/ ${EXPORT_FOLDER}/SourceTree
 # create instructions
 touch ${EXPORT_FOLDER}/SourceTree/__delete__this__file.txt
-echo "~/Library/Application Support/SourceTree/" > ${EXPORT_FOLDER}/SourceTree/__delete__this__file.txt
+echo "→ ~/Library/Application Support/SourceTree/" > ${EXPORT_FOLDER}/SourceTree/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_SourceTree.zip ${EXPORT_FOLDER}/SourceTree
 
@@ -126,7 +127,7 @@ mkdir -p ${EXPORT_FOLDER}/filezilla
 cp -r ~/.config/filezilla/ ${EXPORT_FOLDER}/filezilla
 # create instructions
 touch ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
-echo "~/.config/filezilla/" > ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
+echo "→ ~/.config/filezilla/" > ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_filezilla.zip ${EXPORT_FOLDER}/filezilla
 
@@ -141,7 +142,7 @@ mkdir -p ${EXPORT_FOLDER}/sublimetext
 cp -r  ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ${EXPORT_FOLDER}/sublimetext
 # create instructions
 touch ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
-echo "~/Library/Application Support/Sublime Text 3/Packages/User" > ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
+echo "→ ~/Library/Application Support/Sublime Text 3/Packages/User" > ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_sublimetext.zip ${EXPORT_FOLDER}/sublimetext
 
@@ -178,7 +179,7 @@ mkdir -p ${EXPORT_FOLDER}/adobe
 cp -r ~/.adobe/ ${EXPORT_FOLDER}/adobe
 # create instructions
 touch ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
-echo "~/.adobe/" > ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
+echo "→ ~/.adobe/" > ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_adobe.zip ${EXPORT_FOLDER}/adobe
 
@@ -196,7 +197,7 @@ mkdir -p ${EXPORT_FOLDER}/fonts
 cp -r ~/Library/Fonts/ ${EXPORT_FOLDER}/fonts
 # create instructions
 touch ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
-echo "~/Library/Fonts" > ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
+echo "→ ~/Library/Fonts" > ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_fonts.zip ${EXPORT_FOLDER}/fonts
 

@@ -13,7 +13,7 @@ mkdir -p ${EXPORT_FOLDER}/fonts
 cp -r ~/Library/Fonts/ ${EXPORT_FOLDER}/fonts
 # create instructions
 touch ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
-echo "~/Library/Fonts" > ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
+echo "→ ~/Library/Fonts" > ${EXPORT_FOLDER}/fonts/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/fonts.zip ${EXPORT_FOLDER}/fonts
 ```
