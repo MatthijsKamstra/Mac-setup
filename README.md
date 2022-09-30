@@ -25,7 +25,10 @@ Before we can install a fresh computer, we want to backup the old settings
 - Adobe?
 - Fonts
 
-```
+
+```bash
+# download everything in the download for now
+cd ~/Downloads
 git clone https://github.com/MatthijsKamstra/Mac-setup.git
 cd Mac-setup
 sh _backup_settings.sh
@@ -67,7 +70,9 @@ Download or clone this repository.
 
 This script starts everything, probably only useful for me
 
-```
+```bash
+# download everything in the download for now
+cd ~/Downloads
 git clone https://github.com/MatthijsKamstra/Mac-setup.git
 cd Mac-setup
 sh install.sh
