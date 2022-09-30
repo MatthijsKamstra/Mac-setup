@@ -31,7 +31,6 @@ defaults write com.googlecode.iterm2 "Non Ascii Font" -string "SourceCodePro-Reg
 
 
 ```
-- Open iTerm2 that we already downloaded at the first section
 - Go to iTerm2 > Preferences > Profiles > Colors Tab
 - Click Color Presets… at the bottom right
 - Click Import…
