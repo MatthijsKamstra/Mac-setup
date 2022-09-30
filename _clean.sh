@@ -23,7 +23,22 @@ fi
 if test ! $(which brew); then
   echo "Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/matthijskamstra/.zprofile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/matthijskamstra/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+# update from brew
+# ==> Next steps:
+# - Run these three commands in your terminal to add Homebrew to your PATH:
+#     echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/matthijskamstra/.zprofile
+#     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/matthijskamstra/.zprofile
+#     eval "$(/opt/homebrew/bin/brew shellenv)"
+# - Run brew help to get started
+# - Further documentation:
+#     https://docs.brew.sh
+
+
 
 # Make sure we’re using the latest Homebrew.
 brew update
