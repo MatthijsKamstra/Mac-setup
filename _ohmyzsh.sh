@@ -88,7 +88,7 @@ curl -O  https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/m
 
 # open file (default and sublime text)
 # nano ~/.zshrc
-open ~/.zshrc
+# open ~/.zshrc
 open -a "Sublime Text" ~/.zshrc
 
 # what do we need to change when we update the file?
