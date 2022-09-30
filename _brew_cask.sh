@@ -109,6 +109,7 @@ brew install --cask appcleaner
 # brew install --cask db-browser-for-sqlite
 brew install --cask diffmerge
 # brew install --cask discord
+brew install --cask disk-drill
 brew install --cask disk-inventory-x
 brew install --cask dropbox
 brew install --cask firefox
