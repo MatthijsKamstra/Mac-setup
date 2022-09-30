@@ -71,13 +71,25 @@ cp -r ~/.ssh ${EXPORT_FOLDER}/dotfile/
 # perhaps homebrew files
 cp -r ~/.zprofile ${EXPORT_FOLDER}/dotfile/
 
-
 # oh-my-zsh
 # the installer will rename an existing .zshrc file to .zshrc.pre-oh-my-zsh.
 
+
+# iTerm settings
+# get the original iTerm
+# mkdir -p ${EXPORT_FOLDER}/dotfile/iTerm/settings
+# cp -r ~/Library/Preferences/com.googlecode.iterm2.plist ${EXPORT_FOLDER}/dotfile/iTerm/settings
+
+# iTerm settings
+# use the new generated file
+mkdir -p ${EXPORT_FOLDER}/dotfile/iTerm/settings
+cp -r ~/.dotfiles/iTerm/settings/com.googlecode.iterm2.plist ${EXPORT_FOLDER}/dotfile/iTerm/settings
+
+
+
 # create instructions
 touch ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
-echo "→ ~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh\n~/.zprofile" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
+echo "→ ~/.bash_profile\n~/.config/git\n~/.config/filezilla\n~/.gitconfig\n~/.gitflow_export\n~/.gitignore_global\n~/.haxelib\n~/.profile\n~/.zshrc\n~/.ssh\n~/.zprofile\n~/Library/Preferences/com.googlecode.iterm2.plist" > ${EXPORT_FOLDER}/dotfile/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_dotfile.zip ${EXPORT_FOLDER}/dotfile
 

@@ -1,8 +1,8 @@
 # iterm2
 
 - https://shyr.io/blog/sync-iterm2-configs
+- https://shyr.io/blog/iterm2-beautiful-customizations
 - https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
-
 - https://medium.com/swlh/the-ultimate-terminal-emulator-with-oh-my-zsh-experience-f81f838c6daf
 
 
@@ -20,7 +20,7 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 ```
 
-
+see the `.plist` file for more info
 
 ```bash
 defaults write com.googlecode.iterm2 "Normal Font" -string "SourceCodePro-Regular"
