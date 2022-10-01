@@ -28,7 +28,7 @@ echo "🦊 Backup settings from different programs I use regular..."
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-EXPORT_FOLDER=export_don_t_upload
+EXPORT_FOLDER=dotfiles_don_t_upload
 
 # create folder (if needed)
 # create a folder with the files in it, in the folder structure you run the script in
@@ -48,6 +48,8 @@ mkdir -p ${EXPORT_FOLDER}/ssh
 cp -r ~/.ssh/ ${EXPORT_FOLDER}/ssh
 # create instructions
 touch ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
+touch ${EXPORT_FOLDER}/vscode/install_ssh.sh
+echo "#!/bin/bash\n\necho '🦊 Restore ssh keys'\n\ncp -r ../ssh/ ~/.ssh" > ${EXPORT_FOLDER}/sublimetext/install_ssh.sh
 echo "→ ~/.ssh/" > ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_ssh.zip ${EXPORT_FOLDER}/ssh
@@ -113,6 +115,8 @@ cp -r ~/Library/Application\ Support/Code/User/keybindings.json ${EXPORT_FOLDER}
 cp -r ~/Library/Application\ Support/Code/User/snippets ${EXPORT_FOLDER}/vscode/
 # create instructions
 touch ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
+touch ${EXPORT_FOLDER}/vscode/install_vscode.sh
+echo "#!/bin/bash\n\necho '🦊 restore settings vscode '" > ${EXPORT_FOLDER}/vscode/install_vscode.sh
 echo "→ ~/Library/Application Support/Code/User/" > ${EXPORT_FOLDER}/vscode/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_vscode.zip ${EXPORT_FOLDER}/vscode
@@ -143,8 +147,8 @@ echo "→ ~/.config/filezilla/" > ${EXPORT_FOLDER}/filezilla/__delete__this__fil
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_filezilla.zip ${EXPORT_FOLDER}/filezilla
 
-# sublimetext
-echo '├── sublimetext'
+# Sublimetext
+echo '├── Sublimetext'
 # create folder for sublimetext settings file
 mkdir -p ${EXPORT_FOLDER}/sublimetext
 # open ~/Library/Application\ Support/Sublime\ Text\ 3/
@@ -154,6 +158,8 @@ mkdir -p ${EXPORT_FOLDER}/sublimetext
 cp -r  ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ${EXPORT_FOLDER}/sublimetext
 # create instructions
 touch ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
+touch ${EXPORT_FOLDER}/sublimetext/install_sublime.sh
+echo "#!/bin/bash\n\necho '🦊 Restore settings Sublimetext'\n\ncp -r ../sublimetext/User/ ~/Library/Application\ Support/Sublime\ Text/Packages/User " > ${EXPORT_FOLDER}/sublimetext/install_sublime.sh
 echo "→ ~/Library/Application Support/Sublime Text 3/Packages/User" > ${EXPORT_FOLDER}/sublimetext/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_sublimetext.zip ${EXPORT_FOLDER}/sublimetext
@@ -184,16 +190,16 @@ haxelib list > ${EXPORT_FOLDER}/haxelib_list.txt
 
 # Adobe
 # the next phase of my career will probably be without Adobe
-echo '├── Adobe'
-mkdir -p ${EXPORT_FOLDER}/adobe
-# open ~/.adobe/
-# copy content
-cp -r ~/.adobe/ ${EXPORT_FOLDER}/adobe
-# create instructions
-touch ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
-echo "→ ~/.adobe/" > ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
-# zip it because we can
-zip -r ${EXPORT_FOLDER}/_adobe.zip ${EXPORT_FOLDER}/adobe
+# echo '├── Adobe'
+# mkdir -p ${EXPORT_FOLDER}/adobe
+# # open ~/.adobe/
+# # copy content
+# cp -r ~/.adobe/ ${EXPORT_FOLDER}/adobe
+# # create instructions
+# touch ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
+# echo "→ ~/.adobe/" > ${EXPORT_FOLDER}/adobe/__delete__this__file.txt
+# # zip it because we can
+# zip -r ${EXPORT_FOLDER}/_adobe.zip ${EXPORT_FOLDER}/adobe
 
 
 
