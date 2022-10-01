@@ -1,59 +1,63 @@
 # personal reminder: Things to Backup
 
-- vscode
-- sublime
-- iterm
-- sourcetree
 
+## Local disk
 
+- .dotfiles/
+ - [Ensure committed & pushed]
+- .ssh/
+- .localrc
+- Applications
+  - check which are installed via app store / other ways
+- Desktop
+  - clean up, save to backup disk
+- Documents
+  - important
+- Downloads
+  - clean up, save to backup disk
+- Dropbox
+  - save to backup disk
+- Library/
+  - there be dragons here
+  - Library/Application Support/
+    - [Backup important apps]
+- Movies
+  - save to backup disk
+- Music
+  - nothing to do (spotify!)
+- Pictures
+  - save to backup disk
+- Public
+  - nothing to do
 
-
-## Local Disk
-
- - Psy/
-   - Desktop/
-     - [Screenshots]
-   - Downloads/
-     - [Everything]
-   - Documents/
-   - Pictures/
-   - Movies/
-
-   - code/
-   - crap/
-
-   - Library/
-   - Library/Application Support/
-     - [Backup important apps]
-
-   - .dotfiles/
-     - [Ensure committed & pushed]
-   - .ssh/
-   - .localrc
-   - [Shell History]
-   - [Private Configs and Files]
-
-
-## Code / Dev Tools
-
-  - Copy private configs for specific projects
-    - Slab: config/dev.exs
-    - Slab: .iex.exs
-
-  - Nginx configs
 
 ## Applications
 
- - iPhotos:         Photos
- - Sabznbd:         Settings
- - Firefox:         Settings, History, Bookmarks, Tampermonkey scripts
- - Android Studio:  Settings
- - NightEye:        Settings
- - Little Snitch:   Whitelist
- - Insomnia:        Request Collection
- - Postico:         Database Connections
- - Games (apps):    Gamesaves
- - Games (emu):     Gamesaves
+*web*
+
+- Firefox (login)
+- Google Chrome (login)
+- muCommander (not that difficult)
+- keepassxc
+  - copy files
+  - open correct files
+- iTerm
+  - copy settings
+  - see `_ohmyzsh.sh`
+- Haxe
+  - not sure why I don't do it via brew
+  - https://haxe.org/download/
+  - `sh _haxelib.sh`
+- vscode
+  - use Sync via github
+- Sublime Text
+  - use `sh _backup_settings.sh` and use `install_sublimetext.sh `
+- GIT repos
+- .ssh keys
+   - sourcetree
+- Mail
+
+
 
 
 ## System

@@ -8,7 +8,7 @@ But there might be one that you will need, and isn't installed via osx or brew..
 
 (living on the edge probably)
 
-```
+```bash
 ls /Applications > applications_list.txt
 # possible to get all apps installed on computer
 sudo find / -iname *.app > applications_all_list.txt

@@ -275,6 +275,20 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Finder                                                                      #
 ###############################################################################
 
+
+# Add Movies, Music, Pictures, <username>, to Finder Favorites sidebar.
+# loggedInUser=`/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }'`
+# if [ -e /usr/bin/sfltool ]
+# then
+
+# /usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file:///Users/$loggedInUser/Movies && sleep 2
+# /usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file:///Users/$loggedInUser/Music && sleep 2
+# /usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file:///Users/$loggedInUser/Pictures && sleep 2\
+# /usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file:///Users/$loggedInUser && sleep 2
+# touch /Users/$loggedInUser/.sidebarshortcuts
+
+# fi
+
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
@@ -303,6 +317,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
+
+# Shows Tab View
+/usr/bin/defaults write com.apple.finder ShowTabView -bool true;
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
