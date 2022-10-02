@@ -1,15 +1,13 @@
 # personal reminder: Things to Backup
 
-
 ```sh
 sh _backup_settings.sh
 ```
 
-
 ## Local disk
 
 - .dotfiles/
- - [Ensure committed & pushed]
+- [Ensure committed & pushed]
 - .ssh/
 - .localrc
 - Applications
@@ -35,7 +33,6 @@ sh _backup_settings.sh
 - Public
   - nothing to do
 
-
 ## Applications
 
 _bar_
@@ -50,7 +47,7 @@ _bar_
 _web_
 
 - Firefox
- - login
+- login
 - Google Chrome
   - login
 - muCommander
@@ -82,8 +79,6 @@ _web_
 - GIT repos
 - sourcetree
 
-
-
 ## errors with ssh
 
 ```
@@ -92,11 +87,9 @@ _web_
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
-
 - https://stackabuse.com/how-to-fix-warning-unprotected-private-key-file-on-mac-and-linux/
 - https://maximbilan.medium.com/ssh-keys-fixing-the-warning-unprotected-private-key-file-17fabdca7d3b
 - http://www.techkaki.com/warning-unprotected-private-key-file/
-
 
 ```bash
 # only one file
@@ -105,8 +98,8 @@ sudo chmod 600 /path/to/my/key.pem
 # but probably the whole folder needs to have dif permisson
 sudo chmod 755 ~/.ssh
 
-````
+```
 
 ## System
 
- - Dock Config
+- Dock Config
