@@ -9,6 +9,7 @@ echo "🦊 Programs install that are not in the Apple store or via Brew"
 # ColorSlurp --> https://apps.apple.com/us/app/colorslurp/id1287239339?mt=12
 
 
+echo 'Haxe --> https://haxe.org/download/';
 echo 'Filezilla --> https://filezilla-project.org/download.php?platform=osx';
 
 

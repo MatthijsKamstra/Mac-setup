@@ -33,11 +33,20 @@
 
 ## Applications
 
-*web*
+_bar_
 
-- Firefox (login)
-- Google Chrome (login)
-- muCommander (not that difficult)
+- spectacles
+  - Prefs > Launch at login
+- itsycal
+  - General > Launch on login
+  - Appearance > use outline icon
+  - Appearance > show calendar weeks
+- Firefox
+ - login
+- Google Chrome
+  - login
+- muCommander
+  - mostly use it default
 - keepassxc
   - copy files
   - open correct files
@@ -46,18 +55,20 @@
   - see `_ohmyzsh.sh`
 - Haxe
   - not sure why I don't do it via brew
-  - https://haxe.org/download/
+  - download: https://haxe.org/download/
   - `sh _haxelib.sh`
 - vscode
   - use Sync via github
 - Sublime Text
   - use `sh _backup_settings.sh` and use `install_sublimetext.sh `
-- GIT repos
 - .ssh keys
    - sourcetree
+- GIT repos
 - Mail
-
-
+- Filezilla
+  - download: https://filezilla-project.org/download.php?platform=osx';
+  - copy old icon and replac ugly original
+  -
 
 
 ## System

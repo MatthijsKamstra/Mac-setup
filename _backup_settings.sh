@@ -54,13 +54,17 @@ echo "→ ~/.ssh/" > ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_ssh.zip ${EXPORT_FOLDER}/ssh
 
+# config (filezilla)
+echo '├── config'
+mkdir -p ${EXPORT_FOLDER}/config
+cp -r ~/.config/filezilla ${EXPORT_FOLDER}/config/ # old skool
+# cp -r ~/.config/git ${EXPORT_FOLDER}/config/ # not sure I need this anymore
+
 # dotfile
 echo '├── dotfile'
 mkdir -p ${EXPORT_FOLDER}/dotfile
 # copy content
-cp -r ~/.bash_profile ${EXPORT_FOLDER}/dotfile/
-cp -r ~/.config/git ${EXPORT_FOLDER}/dotfile/config/
-cp -r ~/.config/filezilla ${EXPORT_FOLDER}/dotfile/config/
+cp -r ~/.bash_profile ${EXPORT_FOLDER}/dotfile/ # probably replaced by ohmyzsh
 cp -r ~/.gitconfig ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.gitflow_export ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.gitignore_global ${EXPORT_FOLDER}/dotfile/
@@ -68,7 +72,6 @@ cp -r ~/.haxelib ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.profile ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.zshrc ${EXPORT_FOLDER}/dotfile/
 cp -r ~/.ssh ${EXPORT_FOLDER}/dotfile/
-
 
 # perhaps homebrew files
 cp -r ~/.zprofile ${EXPORT_FOLDER}/dotfile/
@@ -121,6 +124,7 @@ echo "→ ~/Library/Application Support/Code/User/" > ${EXPORT_FOLDER}/vscode/__
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_vscode.zip ${EXPORT_FOLDER}/vscode
 
+
 # Sourcetree
 echo '├── Sourcetree'
 # create folder for sourcetree settings file
@@ -137,15 +141,18 @@ zip -r ${EXPORT_FOLDER}/_SourceTree.zip ${EXPORT_FOLDER}/SourceTree
 
 # FileZilla
 echo '├── FileZilla'
-mkdir -p ${EXPORT_FOLDER}/filezilla
+mkdir -p ${EXPORT_FOLDER}/config
+mkdir -p ${EXPORT_FOLDER}/config/filezilla
 # open ~/.filezilla/
 # copy content
-cp -r ~/.config/filezilla/ ${EXPORT_FOLDER}/filezilla
+cp -r ~/.config/filezilla/ ${EXPORT_FOLDER}/config/filezilla
 # create instructions
-touch ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
-echo "→ ~/.config/filezilla/" > ${EXPORT_FOLDER}/filezilla/__delete__this__file.txt
+touch ${EXPORT_FOLDER}/config/__delete__this__file.txt
+# touch ${EXPORT_FOLDER}/filezilla/install_filezilla.sh
+# echo "#!/bin/bash\n\necho '🦊 Restore settings Filezilla'\n\ncp -r ../sublimetext/User/ ~/Library/Application\ Support/Sublime\ Text/Packages/User " > ${EXPORT_FOLDER}/filezilla/install_filezilla.sh
+echo "→ ~/.config/filezilla/" > ${EXPORT_FOLDER}/config/__delete__this__file.txt
 # zip it because we can
-zip -r ${EXPORT_FOLDER}/_filezilla.zip ${EXPORT_FOLDER}/filezilla
+zip -r ${EXPORT_FOLDER}/_filezilla.zip ${EXPORT_FOLDER}/config/filezilla
 
 # Sublimetext
 echo '├── Sublimetext'
