@@ -78,6 +78,7 @@ _web_
 - Mail
 - GIT repos
 - sourcetree
+  - install files from `_backup_settings.sh`
 
 ## errors with ssh
 
