@@ -1,6 +1,11 @@
 # personal reminder: Things to Backup
 
 
+```sh
+sh _backup_settings.sh
+```
+
+
 ## Local disk
 
 - .dotfiles/
@@ -41,6 +46,9 @@ _bar_
   - General > Launch on login
   - Appearance > use outline icon
   - Appearance > show calendar weeks
+
+_web_
+
 - Firefox
  - login
 - Google Chrome
@@ -62,13 +70,17 @@ _bar_
 - Sublime Text
   - use `sh _backup_settings.sh` and use `install_sublimetext.sh `
 - .ssh keys
-   - sourcetree
-- GIT repos
-- Mail
+  - git
+  - gitignroe
+  - git blah
+  - .zshrc (posible)
 - Filezilla
   - download: https://filezilla-project.org/download.php?platform=osx';
   - copy old icon and replac ugly original
-  -
+  - install files from `_backup_settings.sh`
+- Mail
+- GIT repos
+- sourcetree
 
 
 ## System
