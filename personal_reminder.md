@@ -35,7 +35,7 @@ sh _backup_settings.sh
 
 ## Applications
 
-_bar_
+_menu-bar_
 
 - spectacles
   - Prefs > Launch at login
@@ -47,38 +47,44 @@ _bar_
 _web_
 
 - Firefox
-- login
+  - login
 - Google Chrome
   - login
-- muCommander
-  - mostly use it default
 - keepassxc
   - copy files
   - open correct files
-- iTerm
-  - copy settings
-  - see `_ohmyzsh.sh`
 - Haxe
   - not sure why I don't do it via brew
   - download: https://haxe.org/download/
   - `sh _haxelib.sh`
+- Filezilla
+  - download: https://filezilla-project.org/download.php?platform=osx';
+  - copy old icon and replac ugly original
+  - install files from `_backup_settings.sh`
+- muCommander
+  - mostly use it default
+
+_tools_
+
 - vscode
   - use Sync via github
 - Sublime Text
   - use `sh _backup_settings.sh` and use `install_sublimetext.sh `
+- iTerm
+  - copy settings
+  - see `_ohmyzsh.sh`
 - .ssh keys
   - git
   - gitignroe
   - git blah
   - .zshrc (posible)
-- Filezilla
-  - download: https://filezilla-project.org/download.php?platform=osx';
-  - copy old icon and replac ugly original
-  - install files from `_backup_settings.sh`
-- Mail
-- GIT repos
 - sourcetree
   - install files from `_backup_settings.sh`
+
+_misc_
+
+- Mail
+- GIT repos
 
 ## errors with ssh
 
