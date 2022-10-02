@@ -83,6 +83,30 @@ _web_
 - sourcetree
 
 
+
+## errors with ssh
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+```
+
+
+- https://stackabuse.com/how-to-fix-warning-unprotected-private-key-file-on-mac-and-linux/
+- https://maximbilan.medium.com/ssh-keys-fixing-the-warning-unprotected-private-key-file-17fabdca7d3b
+- http://www.techkaki.com/warning-unprotected-private-key-file/
+
+
+```bash
+# only one file
+sudo chmod 600 /path/to/my/key.pem
+
+# but probably the whole folder needs to have dif permisson
+sudo chmod 755 ~/.ssh
+
+````
+
 ## System
 
  - Dock Config

@@ -48,8 +48,8 @@ mkdir -p ${EXPORT_FOLDER}/ssh
 cp -r ~/.ssh/ ${EXPORT_FOLDER}/ssh
 # create instructions
 touch ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
-touch ${EXPORT_FOLDER}/vscode/install_ssh.sh
-echo "#!/bin/bash\n\necho '🦊 Restore ssh keys'\n\ncp -r ../ssh/ ~/.ssh" > ${EXPORT_FOLDER}/sublimetext/install_ssh.sh
+touch ${EXPORT_FOLDER}/ssh/install_ssh.sh
+echo "#!/bin/bash\n\necho '🦊 Restore ssh keys'\n\ncp -r ../ssh/ ~/.ssh" > ${EXPORT_FOLDER}/ssh/install_ssh.sh
 echo "→ ~/.ssh/" > ${EXPORT_FOLDER}/ssh/__delete__this__file.txt
 # zip it because we can
 zip -r ${EXPORT_FOLDER}/_ssh.zip ${EXPORT_FOLDER}/ssh
