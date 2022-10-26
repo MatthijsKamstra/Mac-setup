@@ -2,13 +2,13 @@
 
 echo "🦊 Installing PhotoGimp..."
 
-
-#  installing oh-my-zsh
-# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#
+# installing photogimp_osx
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/MatthijsKamstra/Mac-setup/master/install/photogimp_osx.sh)"
+#
 
 echo "→ Make sure GIMP is closed"
 killall gimp
-
 
 echo "→ Downloading PhotoGIMP.by.Diolinux.v2020.for.Flatpak.zip"
 # Downloading PhotoGimp
@@ -22,26 +22,25 @@ curl -L https://github.com/Diolinux/PhotoGIMP/releases/download/1.0/PhotoGIMP.by
 echo "→ Create new icon for GIMP"
 
 # original icon file
-input_filepath="~/Downloads/PhotoGIMP\ by\ Diolinux\ v2020\ for\ Flatpak/.icons/photogimp.png"
+input=~/Downloads/PhotoGIMP\ by\ Diolinux\ v2020\ for\ Flatpak/.icons/photogimp.png
 # icon name
-output_iconset_name="gimp.iconset"
+output="gimp.iconset"
 # create icons folder
-mkdir $output_iconset_name
+cd ~/Downloads
+mkdir $output
 
 # convert images to create the different sizes for the icon
-sips -z 16 16     $input_filepath --out "${output_iconset_name}/icon_16x16.png"
-sips -z 32 32     $input_filepath --out "${output_iconset_name}/icon_16x16@2x.png"
-sips -z 32 32     $input_filepath --out "${output_iconset_name}/icon_32x32.png"
-sips -z 64 64     $input_filepath --out "${output_iconset_name}/icon_32x32@2x.png"
-sips -z 128 128   $input_filepath --out "${output_iconset_name}/icon_128x128.png"
-sips -z 256 256   $input_filepath --out "${output_iconset_name}/icon_128x128@2x.png"
-sips -z 256 256   $input_filepath --out "${output_iconset_name}/icon_256x256.png"
-sips -z 512 512   $input_filepath --out "${output_iconset_name}/icon_256x256@2x.png"
-sips -z 512 512   $input_filepath --out "${output_iconset_name}/icon_512x512.png"
-sips -z 1024 1024   $input_filepath --out "${output_iconset_name}/icon_512x512@2x.png"
+sips -z 16 16     $input --out "${output}/icon_16x16.png"
+sips -z 32 32     $input --out "${output}/icon_16x16@2x.png"
+sips -z 32 32     $input --out "${output}/icon_32x32.png"
+sips -z 64 64     $input --out "${output}/icon_32x32@2x.png"
+sips -z 128 128   $input --out "${output}/icon_128x128.png"
+sips -z 256 256   $input --out "${output}/icon_128x128@2x.png"
+sips -z 256 256   $input --out "${output}/icon_256x256.png"
+sips -z 512 512   $input --out "${output}/icon_256x256@2x.png"
+sips -z 512 512   $input --out "${output}/icon_512x512.png"
+sips -z 1024 1024   $input --out "${output}/icon_512x512@2x.png"
 
-# create icon set
-cd ~/Downloads/
 # create icon.icns
 iconutil -c icns $output_iconset_name
 
