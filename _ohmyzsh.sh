@@ -78,7 +78,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 echo 'Pimping iterm2'
-# use donwload folder for this
+# use downloads folder for this
 cd ~/Downloads
 curl -O  https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors
 curl -O  https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
