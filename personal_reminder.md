@@ -84,7 +84,17 @@ _tools_
 _misc_
 
 - Mail
+  - import the export files
+  - reminder: rules
+  - reminder: send items
+  - reminder: all rules folders content
 - GIT repos
+  - copy from backup
+  - test ssh
+  - test source tree
+- Finder
+  - https://support.apple.com/guide/mac-help/customize-the-finder-toolbars-on-mac-mchlp3011/mac
+  - Change what’s in the toolbar: Choose View > Customize Toolbar
 
 ## errors with ssh
 
